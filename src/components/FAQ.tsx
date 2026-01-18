@@ -2,43 +2,88 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, ShieldCheck } from "lucide-react";
 
 const faqs = [
   {
-    question: "O código fonte é realmente meu?",
-    answer:
-      "Sim, 100%. Você recebe todo o código fonte do sistema. Pode modificar, personalizar, adicionar funcionalidades e escalar como quiser. É seu patrimônio digital.",
+    category: "Sobre o investimento",
+    questions: [
+      {
+        question: "Por que o preço é tão baixo comparado ao mercado?",
+        answer:
+          "Porque já desenvolvi esse sistema e domino a tecnologia. Uma software house cobra R$ 150k+ porque precisa pagar equipe, escritório, gerentes... Eu trabalho sozinho, direto com você. Isso corta intermediários e reduz custos sem perder qualidade.",
+      },
+      {
+        question: "E se eu não gostar ou não funcionar?",
+        answer:
+          "Você tem 30 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, devolvo 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo meu.",
+      },
+      {
+        question: "Quais formas de pagamento vocês aceitam?",
+        answer:
+          "PIX (5% de desconto), cartão de crédito em até 6x sem juros, ou boleto bancário. Também negociamos condições especiais para pagamento à vista. Entre em contato para combinarmos.",
+      },
+    ],
   },
   {
-    question: "Preciso saber programar?",
-    answer:
-      "Não. Eu desenvolvo todo o sistema e entrego funcionando. Você recebe os apps publicados nas lojas e o painel administrativo pronto. Só precisa operar o negócio.",
+    category: "Sobre o sistema",
+    questions: [
+      {
+        question: "O código fonte é realmente meu para sempre?",
+        answer:
+          "Sim, 100%. Você recebe todo o código fonte do sistema. Pode modificar, contratar outro dev para evoluir, vender, fazer o que quiser. É seu patrimônio digital. Não existe mensalidade ou licença.",
+      },
+      {
+        question: "E se o app der bug depois da entrega?",
+        answer:
+          "Você tem 60 dias de suporte técnico incluso para correção de bugs. Após esse período, posso continuar te atendendo por um valor de manutenção mensal opcional (R$ 500/mês) ou você pode contratar qualquer outro desenvolvedor Flutter.",
+      },
+      {
+        question: "Preciso pagar algo mensal para o sistema funcionar?",
+        answer:
+          "O sistema em si não tem mensalidade. Os únicos custos recorrentes são: servidor (cerca de R$ 50-100/mês), conta de desenvolvedor na Play Store (R$ 25 única vez) e App Store (R$ 99/ano). Eu te ajudo a configurar tudo.",
+      },
+    ],
   },
   {
-    question: "Por que o preço é tão baixo comparado ao mercado?",
-    answer:
-      "Porque já desenvolvi sistemas similares e domino a tecnologia. Isso me permite entregar um projeto de alta qualidade em menos tempo. Você recebe um sistema desenvolvido sob medida, com sua marca, por uma fração do preço de uma software house tradicional.",
+    category: "Sobre começar o negócio",
+    questions: [
+      {
+        question: "Como consigo meus primeiros clientes?",
+        answer:
+          "Incluo um guia de aquisição de clientes testado. As estratégias que mais funcionam: parceria com borracharias (eles indicam, você paga comissão), anúncios no Facebook/Instagram segmentados por região, e panfletagem em postos de gasolina. Clientes que seguiram o guia conseguiram os primeiros 50 assinantes em 30 dias.",
+      },
+      {
+        question: "Preciso ter CNPJ para começar?",
+        answer:
+          "Não precisa para começar. Pode operar como MEI (faturamento até R$ 81k/ano) ou pessoa física inicialmente. Quando crescer, te ajudo a entender qual estrutura faz mais sentido. O sistema funciona independente da sua situação fiscal.",
+      },
+      {
+        question: "E se já existir concorrência na minha cidade?",
+        answer:
+          "Concorrência valida o mercado - significa que tem demanda. Seu diferencial será: atendimento local, preço competitivo, e um app moderno (a maioria usa sistemas antigos). Clientes que entraram em mercados com concorrência conseguiram faturar igual ou mais que os estabelecidos.",
+      },
+    ],
   },
   {
-    question: "Funciona em qualquer cidade?",
-    answer:
-      "Sim! O sistema usa GPS e funciona em qualquer lugar do Brasil. Você define a área de atuação e cadastra os prestadores da sua região.",
-  },
-  {
-    question: "O que preciso para publicar nas lojas?",
-    answer:
-      "Eu cuido de tudo. A publicação nas lojas (Google Play e App Store) já está inclusa no pacote. Você só precisa dos dados do seu negócio para criar as contas de desenvolvedor em seu nome.",
-  },
-  {
-    question: "E se eu tiver problemas técnicos?",
-    answer:
-      "Você tem 60 dias de suporte técnico incluso. Qualquer dúvida ou problema, estou aqui para ajudar. Além disso, você recebe um treinamento de como operar o sistema.",
-  },
-  {
-    question: "Posso parcelar o pagamento?",
-    answer:
-      "Sim! Oferecemos condições especiais de parcelamento em até 6x. Entre em contato pelo WhatsApp para combinarmos a melhor forma de pagamento para você.",
+    category: "Sobre o processo",
+    questions: [
+      {
+        question: "Quanto tempo até eu poder começar a vender?",
+        answer:
+          "O desenvolvimento leva 30-45 dias. Após a entrega, você precisa de mais 7-10 dias para aprovação nas lojas (Google Play e App Store). Ou seja, em aproximadamente 45-55 dias você está operando. Eu cuido de toda a publicação.",
+      },
+      {
+        question: "Preciso saber programar ou entender de tecnologia?",
+        answer:
+          "Não. Entrego tudo funcionando e pronto. Você recebe um treinamento em vídeo de como usar o painel admin, cadastrar prestadores, configurar preços, etc. Se tiver dúvidas depois, é só me chamar no WhatsApp durante o período de suporte.",
+      },
+      {
+        question: "O que acontece depois dos 60 dias de suporte?",
+        answer:
+          "Você pode: (1) continuar sozinho - o sistema é estável e não precisa de manutenção constante, (2) contratar manutenção mensal comigo por R$ 500/mês, ou (3) contratar qualquer dev Flutter do mercado. O código é seu, você tem liberdade total.",
+      },
+    ],
   },
 ];
 
@@ -86,7 +131,7 @@ function FAQItem({
 }
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<string | null>("0-0");
 
   return (
     <section className="py-32 relative" id="faq">
@@ -99,30 +144,74 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            Dúvidas
+            Tire suas dúvidas
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
             Perguntas frequentes
           </h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto">
+            Se sua dúvida não estiver aqui, me chama no WhatsApp que respondo na hora.
+          </p>
         </motion.div>
 
-        {/* FAQ List */}
+        {/* FAQ by category */}
+        <div className="max-w-4xl mx-auto space-y-8">
+          {faqs.map((category, catIndex) => (
+            <motion.div
+              key={category.category}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: catIndex * 0.1 }}
+            >
+              <h3 className="text-lg font-semibold text-zinc-300 mb-4 flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-red-500" />
+                {category.category}
+              </h3>
+              <div className="rounded-2xl bg-zinc-900/50 border border-zinc-800 px-8">
+                {category.questions.map((faq, index) => (
+                  <FAQItem
+                    key={index}
+                    question={faq.question}
+                    answer={faq.answer}
+                    isOpen={openIndex === `${catIndex}-${index}`}
+                    onClick={() =>
+                      setOpenIndex(
+                        openIndex === `${catIndex}-${index}`
+                          ? null
+                          : `${catIndex}-${index}`
+                      )
+                    }
+                  />
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Guarantee box */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto"
+          className="max-w-2xl mx-auto mt-16"
         >
-          <div className="rounded-2xl bg-zinc-900/50 border border-zinc-800 px-8">
-            {faqs.map((faq, index) => (
-              <FAQItem
-                key={index}
-                question={faq.question}
-                answer={faq.answer}
-                isOpen={openIndex === index}
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              />
-            ))}
+          <div className="p-8 rounded-2xl bg-gradient-to-br from-green-900/20 to-green-950/20 border border-green-800/30">
+            <div className="flex items-start gap-4">
+              <div className="w-14 h-14 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                <ShieldCheck className="w-7 h-7 text-green-500" />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-green-400 mb-2">
+                  Garantia de 30 dias
+                </h4>
+                <p className="text-zinc-400">
+                  Se você não ficar 100% satisfeito com o sistema por qualquer motivo,
+                  devolvo todo o seu dinheiro em até 7 dias úteis. Sem perguntas,
+                  sem burocracia. O risco é todo meu.
+                </p>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

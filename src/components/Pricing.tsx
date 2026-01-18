@@ -1,21 +1,57 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, ArrowRight, Calculator, TrendingUp } from "lucide-react";
+import {
+  Check,
+  ArrowRight,
+  Calculator,
+  TrendingUp,
+  CreditCard,
+  Zap,
+  ShieldCheck,
+  Gift,
+} from "lucide-react";
 
 const included = [
   "App do Cliente (Android + iOS)",
   "App do Prestador (Android + iOS)",
-  "Painel Administrativo Web",
-  "Código fonte completo",
+  "Painel Administrativo Web completo",
+  "Código fonte 100% seu",
   "Sistema de pagamentos (PIX + Cartão)",
   "GPS e rastreamento em tempo real",
   "Notificações push configuradas",
   "Banco de dados configurado",
-  "Publicação nas lojas (Play Store + App Store)",
+  "Publicação nas lojas incluída",
   "60 dias de suporte técnico",
-  "Treinamento de uso do sistema",
-  "Documentação técnica",
+  "Treinamento em vídeo completo",
+  "Guia de aquisição de clientes",
+];
+
+const bonuses = [
+  {
+    icon: Gift,
+    title: "Guia de Aquisição de Clientes",
+    value: "R$ 497",
+    description: "Estratégias testadas para conseguir seus primeiros 50 clientes",
+  },
+  {
+    icon: Zap,
+    title: "Configuração de Servidor",
+    value: "R$ 300",
+    description: "Configuro toda a infraestrutura para você",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Suporte estendido (60 dias)",
+    value: "R$ 600",
+    description: "Tire dúvidas e corrija bugs sem custo adicional",
+  },
+];
+
+const paymentMethods = [
+  { name: "PIX", highlight: "5% de desconto", icon: "💰" },
+  { name: "Cartão", highlight: "Até 6x sem juros", icon: "💳" },
+  { name: "Boleto", highlight: "À vista", icon: "📄" },
 ];
 
 export default function Pricing() {
@@ -37,52 +73,11 @@ export default function Pricing() {
             Investimento
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Valor que faz sentido
+            Quanto custa ter seu próprio negócio?
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Um sistema que custaria mais de R$ 150.000 para desenvolver do zero,
-            por uma fração do valor.
+            Menos do que você imagina. E com garantia de 30 dias.
           </p>
-        </motion.div>
-
-        {/* Comparison */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto mb-16"
-        >
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Market price */}
-            <div className="p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800">
-              <div className="text-zinc-500 text-sm font-medium mb-2">
-                Desenvolver do zero
-              </div>
-              <div className="text-4xl font-bold text-zinc-400 line-through decoration-red-500">
-                R$ 150.000+
-              </div>
-              <div className="mt-4 space-y-2 text-sm text-zinc-500">
-                <p>6-12 meses de desenvolvimento</p>
-                <p>Equipe de 3-5 desenvolvedores</p>
-                <p>Alto risco de projeto</p>
-              </div>
-            </div>
-
-            {/* My price */}
-            <div className="p-8 rounded-2xl gradient-border bg-zinc-900">
-              <div className="text-red-500 text-sm font-medium mb-2">
-                Desenvolvimento sob medida
-              </div>
-              <div className="text-5xl font-bold gradient-text">
-                R$ 16.500
-              </div>
-              <div className="mt-4 space-y-2 text-sm text-zinc-400">
-                <p>30-45 dias de desenvolvimento</p>
-                <p>Desenvolvedor especializado</p>
-                <p>Sistema testado e funcional</p>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         {/* Main pricing card */}
@@ -90,47 +85,144 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto"
+          className="max-w-4xl mx-auto"
         >
-          <div className="rounded-3xl bg-zinc-900 border border-zinc-800 overflow-hidden">
+          <div className="rounded-3xl bg-zinc-900 border border-zinc-800 overflow-hidden relative">
+            {/* Popular badge */}
+            <div className="absolute top-6 right-6">
+              <span className="px-4 py-1.5 bg-amber-500 text-black text-xs font-bold rounded-full">
+                MAIS ESCOLHIDO
+              </span>
+            </div>
+
             {/* Header */}
             <div className="p-8 md:p-12 bg-gradient-to-br from-zinc-900 to-zinc-950 border-b border-zinc-800">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Pacote Completo</h3>
-                  <p className="text-zinc-400">Tudo que você precisa para começar</p>
+                  <p className="text-zinc-400">
+                    Sistema completo + bônus + garantia de 30 dias
+                  </p>
                 </div>
                 <div className="text-right">
-                  <div className="text-sm text-zinc-500 line-through">R$ 147.000</div>
-                  <div className="text-4xl md:text-5xl font-bold gradient-text">R$ 16.500</div>
-                  <div className="text-zinc-400 text-sm mt-1">ou 6x de R$ 2.750</div>
+                  <div className="text-sm text-zinc-500 line-through mb-1">
+                    De R$ 147.000
+                  </div>
+                  <div className="text-5xl md:text-6xl font-bold gradient-text">
+                    R$ 16.500
+                  </div>
+                  {/* Installment highlight */}
+                  <div className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full">
+                    <CreditCard className="w-4 h-4 text-green-500" />
+                    <span className="text-green-400 font-semibold">
+                      ou 6x de R$ 2.750 sem juros
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Features */}
+            {/* Features + Bonuses */}
             <div className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-4">
-                {included.map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-green-500" />
-                    </div>
-                    <span className="text-zinc-300 text-sm">{item}</span>
+              <div className="grid md:grid-cols-2 gap-12">
+                {/* What's included */}
+                <div>
+                  <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
+                    <Check className="w-5 h-5 text-green-500" />
+                    O que está incluso
+                  </h4>
+                  <div className="space-y-3">
+                    {included.map((item) => (
+                      <div key={item} className="flex items-center gap-3">
+                        <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                          <Check className="w-3 h-3 text-green-500" />
+                        </div>
+                        <span className="text-zinc-300 text-sm">{item}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+
+                {/* Bonuses */}
+                <div>
+                  <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
+                    <Gift className="w-5 h-5 text-amber-500" />
+                    Bônus exclusivos
+                  </h4>
+                  <div className="space-y-4">
+                    {bonuses.map((bonus) => (
+                      <div
+                        key={bonus.title}
+                        className="p-4 rounded-xl bg-zinc-800/50 border border-zinc-700/50"
+                      >
+                        <div className="flex items-start gap-3">
+                          <div className="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center shrink-0">
+                            <bonus.icon className="w-5 h-5 text-amber-500" />
+                          </div>
+                          <div className="flex-1">
+                            <div className="flex items-center justify-between">
+                              <span className="font-medium text-sm">
+                                {bonus.title}
+                              </span>
+                              <span className="text-xs text-zinc-500 line-through">
+                                {bonus.value}
+                              </span>
+                            </div>
+                            <p className="text-xs text-zinc-500 mt-1">
+                              {bonus.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Payment methods */}
+                  <div className="mt-8">
+                    <h5 className="text-sm text-zinc-400 mb-4">
+                      Formas de pagamento
+                    </h5>
+                    <div className="flex flex-wrap gap-3">
+                      {paymentMethods.map((method) => (
+                        <div
+                          key={method.name}
+                          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800 border border-zinc-700"
+                        >
+                          <span>{method.icon}</span>
+                          <div className="text-sm">
+                            <span className="font-medium">{method.name}</span>
+                            <span className="text-zinc-500 ml-2">
+                              {method.highlight}
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* CTA */}
-              <div className="mt-10">
-                <a
-                  href="https://wa.me/5548998649898?text=Olá!%20Quero%20adquirir%20o%20Sistema%20Seguro%20Pneu%20Pro%20por%20R%24%2016.500"
-                  target="_blank"
-                  className="group flex items-center justify-center gap-2 w-full py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow"
-                >
-                  Quero começar meu negócio
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <div className="mt-10 pt-8 border-t border-zinc-800">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheck className="w-8 h-8 text-green-500" />
+                    <div>
+                      <div className="font-medium">Garantia de 30 dias</div>
+                      <div className="text-sm text-zinc-500">
+                        Não gostou? Devolvo seu dinheiro.
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://wa.me/5548998649898?text=Olá!%20Quero%20adquirir%20o%20Sistema%20Seguro%20Pneu%20Pro%20por%20R%24%2016.500"
+                    target="_blank"
+                    className="group flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow w-full sm:w-auto"
+                  >
+                    Quero começar agora
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -146,31 +238,44 @@ export default function Pricing() {
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 text-amber-500 mb-4">
               <Calculator className="w-5 h-5" />
-              <span className="font-medium text-sm uppercase tracking-wider">Retorno do investimento</span>
+              <span className="font-medium text-sm uppercase tracking-wider">
+                Retorno do investimento
+              </span>
             </div>
             <h3 className="text-2xl md:text-3xl font-bold">
-              Faça as contas
+              Quanto você pode faturar?
             </h3>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-4">
             <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-center">
-              <TrendingUp className="w-8 h-8 text-amber-500 mx-auto mb-4" />
-              <div className="text-3xl font-bold">200</div>
-              <div className="text-zinc-500 text-sm mt-1">clientes no plano básico</div>
-              <div className="text-zinc-600 text-xs mt-2">R$ 29,90/mês</div>
+              <div className="text-3xl font-bold">100</div>
+              <div className="text-zinc-500 text-sm mt-1">clientes</div>
+              <div className="text-zinc-600 text-xs mt-2">Meta conservadora</div>
             </div>
             <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-center">
-              <div className="text-3xl font-bold gradient-text">R$ 5.980</div>
-              <div className="text-zinc-500 text-sm mt-1">receita mensal</div>
-              <div className="text-zinc-600 text-xs mt-2">200 × R$ 29,90</div>
+              <div className="text-3xl font-bold">R$ 29,90</div>
+              <div className="text-zinc-500 text-sm mt-1">mensalidade</div>
+              <div className="text-zinc-600 text-xs mt-2">Preço sugerido</div>
             </div>
             <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-center">
-              <div className="text-3xl font-bold text-green-500">3 meses</div>
+              <div className="text-3xl font-bold gradient-text">R$ 2.990</div>
+              <div className="text-zinc-500 text-sm mt-1">receita/mês</div>
+              <div className="text-zinc-600 text-xs mt-2">Recorrente</div>
+            </div>
+            <div className="p-6 rounded-2xl bg-green-900/20 border border-green-800/30 text-center">
+              <TrendingUp className="w-6 h-6 text-green-500 mx-auto mb-2" />
+              <div className="text-3xl font-bold text-green-500">6 meses</div>
               <div className="text-zinc-500 text-sm mt-1">para recuperar</div>
               <div className="text-zinc-600 text-xs mt-2">o investimento</div>
             </div>
           </div>
+
+          <p className="text-center text-zinc-500 text-sm mt-6">
+            Com 200 clientes (meta realista em 6 meses), você fatura R$ 5.980/mês.
+            <br />
+            Alguns clientes já passam de R$ 12.000/mês com 400+ assinantes.
+          </p>
         </motion.div>
       </div>
     </section>
