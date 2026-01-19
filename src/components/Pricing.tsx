@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import {
   Check,
   ArrowRight,
-  Calculator,
-  TrendingUp,
+  Clock,
   CreditCard,
   Zap,
   ShieldCheck,
@@ -228,54 +227,51 @@ export default function Pricing() {
           </div>
         </motion.div>
 
-        {/* ROI Calculator */}
+        {/* Urgency / Cost of waiting */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto mt-20"
+          className="max-w-3xl mx-auto mt-20"
         >
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 text-amber-500 mb-4">
-              <Calculator className="w-5 h-5" />
+          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 text-center">
+            <div className="inline-flex items-center gap-2 text-amber-500 mb-6">
+              <Clock className="w-5 h-5" />
               <span className="font-medium text-sm uppercase tracking-wider">
-                Retorno do investimento
+                Pense nisso
               </span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold">
-              Quanto você pode faturar?
+
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Daqui 45 dias, onde você quer estar?
             </h3>
-          </div>
 
-          <div className="grid md:grid-cols-4 gap-4">
-            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-center">
-              <div className="text-3xl font-bold">100</div>
-              <div className="text-zinc-500 text-sm mt-1">clientes</div>
-              <div className="text-zinc-600 text-xs mt-2">Meta conservadora</div>
-            </div>
-            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-center">
-              <div className="text-3xl font-bold">R$ 29,90</div>
-              <div className="text-zinc-500 text-sm mt-1">mensalidade</div>
-              <div className="text-zinc-600 text-xs mt-2">Preço sugerido</div>
-            </div>
-            <div className="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 text-center">
-              <div className="text-3xl font-bold gradient-text">R$ 2.990</div>
-              <div className="text-zinc-500 text-sm mt-1">receita/mês</div>
-              <div className="text-zinc-600 text-xs mt-2">Recorrente</div>
-            </div>
-            <div className="p-6 rounded-2xl bg-green-900/20 border border-green-800/30 text-center">
-              <TrendingUp className="w-6 h-6 text-green-500 mx-auto mb-2" />
-              <div className="text-3xl font-bold text-green-500">6 meses</div>
-              <div className="text-zinc-500 text-sm mt-1">para recuperar</div>
-              <div className="text-zinc-600 text-xs mt-2">o investimento</div>
-            </div>
-          </div>
+            <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
+              Com seu app nas lojas, recebendo os primeiros assinantes e construindo
+              seu negócio — ou ainda pesquisando orçamentos e adiando a decisão?
+            </p>
 
-          <p className="text-center text-zinc-500 text-sm mt-6">
-            Com 200 clientes (meta realista em 6 meses), você fatura R$ 5.980/mês.
-            <br />
-            Alguns clientes já passam de R$ 12.000/mês com 400+ assinantes.
-          </p>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <div className="p-5 rounded-2xl bg-red-950/20 border border-red-900/30">
+                <div className="text-red-400 font-medium mb-2">Se você esperar...</div>
+                <p className="text-zinc-500 text-sm">
+                  Mais 6 meses pesquisando, comparando, esperando o "momento certo"
+                  que nunca chega. Enquanto isso, alguém lança na sua região.
+                </p>
+              </div>
+              <div className="p-5 rounded-2xl bg-green-950/20 border border-green-900/30">
+                <div className="text-green-400 font-medium mb-2">Se você começar agora...</div>
+                <p className="text-zinc-500 text-sm">
+                  Em 45 dias seu sistema está no ar. Em 90 dias você já tem
+                  os primeiros clientes. Em 6 meses, um negócio funcionando.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-zinc-500 text-sm">
+              A melhor hora para começar era ontem. A segunda melhor é agora.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
