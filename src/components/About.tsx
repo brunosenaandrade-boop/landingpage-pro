@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Linkedin, Github, Award, Briefcase, GraduationCap, Rocket, Headphones } from "lucide-react";
+import { Award, Briefcase, Rocket, Headphones } from "lucide-react";
 
 const credentials = [
   {
@@ -58,26 +58,9 @@ export default function About() {
 
                 {/* Info bar */}
                 <div className="p-6 border-t border-zinc-800 bg-zinc-900/90 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-xl font-bold">Bruno Sena</h3>
-                      <p className="text-zinc-400 text-sm">Faço apps e sistemas</p>
-                    </div>
-                    <div className="flex gap-3">
-                      <a
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-colors"
-                      >
-                        <Linkedin className="w-5 h-5 text-zinc-400" />
-                      </a>
-                      <a
-                        href="https://github.com/brunosenaandrade-boop"
-                        target="_blank"
-                        className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center hover:bg-zinc-700 transition-colors"
-                      >
-                        <Github className="w-5 h-5 text-zinc-400" />
-                      </a>
-                    </div>
+                  <div>
+                    <h3 className="text-xl font-bold">Bruno Sena</h3>
+                    <p className="text-zinc-400 text-sm">Faço apps e sistemas</p>
                   </div>
                 </div>
               </div>
