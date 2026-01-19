@@ -6,7 +6,7 @@ import { Star, Quote, MapPin, CheckCircle, Smartphone, Truck, Calendar, Utensils
 const testimonials = [
   {
     name: "Marcos Oliveira",
-    location: "Aracaju, SE",
+    location: "Feira de Santana, BA",
     initials: "MO",
     age: "52 anos",
     business: "Dono de restaurante",
