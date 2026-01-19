@@ -170,7 +170,7 @@ export default function FAQ() {
                 <div className="w-2 h-2 rounded-full bg-red-500" />
                 {category.category}
               </h3>
-              <div className="rounded-2xl bg-zinc-900/50 border border-zinc-800 px-8">
+              <div className="rounded-2xl bg-zinc-900/50 border border-zinc-800 px-4 sm:px-8">
                 {category.questions.map((faq, index) => (
                   <FAQItem
                     key={index}

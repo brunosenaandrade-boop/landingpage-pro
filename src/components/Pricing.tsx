@@ -92,24 +92,22 @@ export default function Pricing() {
         >
           <div className="rounded-3xl bg-zinc-900 border border-zinc-800 overflow-hidden relative">
             {/* Ancoragem */}
-            <div className="p-6 bg-red-950/20 border-b border-red-900/30">
-              <div className="flex flex-wrap items-center justify-center gap-6 text-center">
+            <div className="p-4 sm:p-6 bg-red-950/20 border-b border-red-900/30">
+              <div className="grid grid-cols-3 gap-2 sm:gap-6 text-center items-end">
                 <div>
-                  <div className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Empresa grande</div>
-                  <div className="text-2xl font-bold text-red-400 line-through">R$ 180.000</div>
-                  <div className="text-xs text-zinc-600">+ 8 meses de espera</div>
+                  <div className="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-wider mb-1">Empresa grande</div>
+                  <div className="text-lg sm:text-2xl font-bold text-red-400 line-through">R$ 180.000</div>
+                  <div className="text-[10px] sm:text-xs text-zinc-600 hidden sm:block">+ 8 meses de espera</div>
                 </div>
-                <div className="text-zinc-700 text-2xl">→</div>
                 <div>
-                  <div className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Freelancer</div>
-                  <div className="text-2xl font-bold text-red-400 line-through">R$ 40.000</div>
-                  <div className="text-xs text-zinc-600">+ qualidade duvidosa</div>
+                  <div className="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-wider mb-1">Freelancer</div>
+                  <div className="text-lg sm:text-2xl font-bold text-red-400 line-through">R$ 40.000</div>
+                  <div className="text-[10px] sm:text-xs text-zinc-600 hidden sm:block">+ qualidade duvidosa</div>
                 </div>
-                <div className="text-zinc-700 text-2xl">→</div>
                 <div>
-                  <div className="text-xs text-green-500 uppercase tracking-wider mb-1">Comigo</div>
-                  <div className="text-2xl font-bold text-green-400">R$ 16.500</div>
-                  <div className="text-xs text-zinc-400">+ 7 anos de amizade</div>
+                  <div className="text-[10px] sm:text-xs text-green-500 uppercase tracking-wider mb-1">Comigo</div>
+                  <div className="text-lg sm:text-2xl font-bold text-green-400">R$ 16.500</div>
+                  <div className="text-[10px] sm:text-xs text-zinc-400 hidden sm:block">+ 7 anos de amizade</div>
                 </div>
               </div>
             </div>

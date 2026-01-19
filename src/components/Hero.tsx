@@ -137,9 +137,9 @@ export default function Hero() {
               <div className="p-8">
                 {/* Slider */}
                 <div className="mb-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <label className="text-sm text-zinc-400">Se você tiver essa quantidade de clientes pagando por mês:</label>
-                    <span className="text-2xl font-bold text-white">{clients}</span>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                    <label className="text-sm text-zinc-400">Quantos clientes pagando por mês:</label>
+                    <span className="text-2xl font-bold text-white">{clients} clientes</span>
                   </div>
                   <input
                     type="range"

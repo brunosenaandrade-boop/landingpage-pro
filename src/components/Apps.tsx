@@ -195,21 +195,21 @@ export default function Apps() {
                   É como comprar uma casa em vez de alugar. É seu, faz o que quiser.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">Seu</div>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
+                <div className="p-3 sm:p-4 rounded-xl bg-zinc-800/50">
+                  <div className="text-xl sm:text-2xl font-bold gradient-text">Seu</div>
                   <div className="text-xs text-zinc-500">O app é seu</div>
                 </div>
-                <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">R$ 0</div>
+                <div className="p-3 sm:p-4 rounded-xl bg-zinc-800/50">
+                  <div className="text-xl sm:text-2xl font-bold gradient-text">R$ 0</div>
                   <div className="text-xs text-zinc-500">Mensalidade do app</div>
                 </div>
-                <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">Android + iPhone</div>
+                <div className="p-3 sm:p-4 rounded-xl bg-zinc-800/50">
+                  <div className="text-lg sm:text-2xl font-bold gradient-text">iOS + Android</div>
                   <div className="text-xs text-zinc-500">Funciona nos dois</div>
                 </div>
-                <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">Sem limite</div>
+                <div className="p-3 sm:p-4 rounded-xl bg-zinc-800/50">
+                  <div className="text-xl sm:text-2xl font-bold gradient-text">Sem limite</div>
                   <div className="text-xs text-zinc-500">De clientes</div>
                 </div>
               </div>
