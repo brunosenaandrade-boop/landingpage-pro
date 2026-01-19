@@ -63,11 +63,10 @@ export default function Navbar() {
           {/* CTA */}
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/5548998649898?text=Olá!%20Tenho%20interesse%20no%20Sistema%20Seguro%20Pneu%20Pro"
-              target="_blank"
+              href="#pricing"
               className="hidden sm:flex items-center gap-2 px-5 py-2.5 bg-red-500 hover:bg-red-600 rounded-full text-sm font-medium transition-colors"
             >
-              Entrar em contato
+              Ver investimento
             </a>
 
             {/* Mobile menu button */}
@@ -104,11 +103,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/5548998649898?text=Olá!%20Tenho%20interesse%20no%20Sistema%20Seguro%20Pneu%20Pro"
-              target="_blank"
+              href="#pricing"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 px-5 py-3 bg-red-500 hover:bg-red-600 rounded-full text-sm font-medium transition-colors mt-2"
             >
-              Entrar em contato
+              Ver investimento
             </a>
           </div>
         </motion.div>

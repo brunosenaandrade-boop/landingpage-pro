@@ -20,21 +20,20 @@ export default function Footer() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Pronto para começar
+              Vamos fechar
               <br />
-              <span className="gradient-text">seu negócio?</span>
+              <span className="gradient-text">o projeto?</span>
             </h2>
             <p className="text-xl text-zinc-400 mb-10">
-              Entre em contato agora e vamos conversar sobre como transformar
-              essa oportunidade em realidade.
+              Se ficou alguma dúvida, estou à disposição para conversar.
             </p>
             <a
-              href="https://wa.me/5548998649898?text=Olá!%20Tenho%20interesse%20no%20Sistema%20Seguro%20Pneu%20Pro"
+              href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20e%20quero%20fechar%20o%20projeto"
               target="_blank"
               className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow"
             >
               <MessageCircle className="w-6 h-6" />
-              Falar pelo WhatsApp
+              Fechar pelo WhatsApp
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
@@ -64,7 +63,7 @@ export default function Footer() {
 
       {/* Floating WhatsApp */}
       <a
-        href="https://wa.me/5548998649898?text=Olá!%20Tenho%20interesse%20no%20Sistema%20Seguro%20Pneu%20Pro"
+        href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20e%20quero%20conversar"
         target="_blank"
         className="fixed bottom-8 right-8 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform z-50"
       >

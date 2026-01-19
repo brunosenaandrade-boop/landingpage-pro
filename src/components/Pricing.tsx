@@ -215,11 +215,11 @@ export default function Pricing() {
                     </div>
                   </div>
                   <a
-                    href="https://wa.me/5548998649898?text=Olá!%20Quero%20adquirir%20o%20Sistema%20Seguro%20Pneu%20Pro%20por%20R%24%2016.500"
+                    href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20e%20quero%20fechar%20o%20projeto"
                     target="_blank"
                     className="group flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow w-full sm:w-auto"
                   >
-                    Quero começar agora
+                    Fechar projeto
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>

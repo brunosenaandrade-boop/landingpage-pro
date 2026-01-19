@@ -140,11 +140,11 @@ export default function About() {
                 </div>
               </div>
               <a
-                href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20seu%20perfil%20e%20quero%20saber%20mais"
+                href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20e%20quero%20tirar%20uma%20dúvida"
                 target="_blank"
                 className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-full font-medium text-sm whitespace-nowrap transition-colors"
               >
-                Falar direto comigo
+                Tirar uma dúvida
               </a>
             </div>
           </motion.div>

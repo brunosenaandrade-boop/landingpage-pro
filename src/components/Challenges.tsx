@@ -9,7 +9,6 @@ import {
   Users,
   AlertTriangle,
   CheckCircle,
-  ArrowRight,
 } from "lucide-react";
 
 const challenges = [
@@ -192,25 +191,12 @@ export default function Challenges() {
               </div>
             </div>
 
-            {/* CTA */}
+            {/* Bottom note */}
             <div className="p-8 md:p-10 bg-zinc-800/30 border-t border-zinc-800">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div>
-                  <h4 className="text-xl font-bold mb-2">
-                    Pronto para começar sem complicação?
-                  </h4>
-                  <p className="text-zinc-400">
-                    Eu cuido da tecnologia, você foca no negócio.
-                  </p>
-                </div>
-                <a
-                  href="https://wa.me/5548998649898?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20sistema"
-                  target="_blank"
-                  className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-full font-semibold whitespace-nowrap hover:from-red-600 hover:to-red-700 transition-all"
-                >
-                  Falar agora
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <div className="text-center">
+                <p className="text-zinc-400">
+                  Com o Seguro Pneu Pro, eu cuido da tecnologia e você foca no negócio.
+                </p>
               </div>
             </div>
           </div>
