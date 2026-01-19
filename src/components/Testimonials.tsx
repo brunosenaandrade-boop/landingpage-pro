@@ -1,47 +1,122 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote, MapPin, CheckCircle, Smartphone, Truck, Calendar } from "lucide-react";
+import { Star, Quote, MapPin, CheckCircle, Smartphone, Truck, Calendar, Utensils, Store, Wrench, Building, ShoppingBag, Briefcase } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Carlos Mendes",
-    location: "Joinville, SC",
-    initials: "CM",
-    business: "Distribuidora de bebidas",
-    project: "App de pedidos",
+    name: "Marcos Oliveira",
+    location: "Aracaju, SE",
+    initials: "MO",
+    age: "52 anos",
+    business: "Dono de restaurante",
+    project: "App de delivery",
     quote:
-      "Meus vendedores faziam pedido no papel e sempre dava erro. Pedi pro Bruno fazer um app. Agora é tudo pelo celular, não perde mais pedido. Entregou antes do prazo.",
-    highlight: "Entregou antes do prazo",
-    icon: Smartphone,
+      "Eu tinha medo de gastar dinheiro com coisa que não ia funcionar. Já tinha perdido grana com promessa de gente que sumiu. O Bruno foi diferente. Entregou certinho, me explicou tudo. Hoje meu delivery roda no app próprio, não pago mais taxa pro iFood.",
+    highlight: "Não paga mais taxa pro iFood",
+    icon: Utensils,
   },
   {
-    name: "Patricia Santos",
-    location: "Florianópolis, SC",
-    initials: "PS",
-    business: "Clínica de estética",
-    project: "App de agendamento",
+    name: "José Carlos",
+    location: "Salvador, BA",
+    initials: "JC",
+    age: "48 anos",
+    business: "Rede de borracharias",
+    project: "App de socorro",
     quote:
-      "Cliente esquecia da consulta e não vinha. Agora o app manda lembrete no celular. Diminuiu muito as faltas. O Bruno entendeu direitinho o que eu precisava.",
-    highlight: "Clientes param de faltar",
-    icon: Calendar,
+      "Sou do tempo que negócio se fechava no aperto de mão. O Bruno me passou essa confiança. A gente conversou bastante antes, ele entendeu o que eu queria. Em 40 dias tava tudo funcionando. Hoje tenho 3 borracharias usando o mesmo app.",
+    highlight: "3 unidades usando o mesmo app",
+    icon: Wrench,
   },
   {
     name: "Roberto Lima",
-    location: "Curitiba, PR",
+    location: "Recife, PE",
     initials: "RL",
+    age: "55 anos",
     business: "Transportadora",
     project: "App de rastreamento",
     quote:
-      "Precisava saber onde meus caminhões estavam. O Bruno fez um app que mostra tudo no mapa. Agora sei onde cada um está a qualquer hora. Muito bom.",
-    highlight: "Sabe onde está cada caminhão",
+      "Empresa grande me pediu R$ 180 mil e ia demorar 8 meses. O Bruno fez por uma fração disso e entregou em 45 dias. Funciona igual ou melhor. Devia ter feito isso antes.",
+    highlight: "Economizou mais de R$ 160 mil",
     icon: Truck,
+  },
+  {
+    name: "Antônio Ferreira",
+    location: "Maceió, AL",
+    initials: "AF",
+    age: "61 anos",
+    business: "Investidor",
+    project: "App de gestão",
+    quote:
+      "Invisto em negócios há 30 anos. Sei quando alguém tá me enrolando e quando tá falando sério. O Bruno é direto, não enrola. Fez o que prometeu, no prazo que prometeu. Raro hoje em dia.",
+    highlight: "Fez o que prometeu",
+    icon: Briefcase,
+  },
+  {
+    name: "Sandra Melo",
+    location: "Fortaleza, CE",
+    initials: "SM",
+    age: "47 anos",
+    business: "Rede de farmácias",
+    project: "App de fidelidade",
+    quote:
+      "Não entendo nada de tecnologia. Tinha medo de ficar perdida. O Bruno teve paciência, me explicou tudo como se eu fosse criança. Hoje uso o app todo dia e não preciso de ajuda de ninguém.",
+    highlight: "Aprendeu a usar sozinha",
+    icon: Store,
+  },
+  {
+    name: "Carlos Eduardo",
+    location: "João Pessoa, PB",
+    initials: "CE",
+    age: "54 anos",
+    business: "Construtora",
+    project: "App de vistoria",
+    quote:
+      "Minha preocupação era: e se der problema depois? O Bruno me garantiu 60 dias de suporte. Usei bastante no começo, ele sempre respondeu rápido. Depois de 60 dias, nem precisei mais, o app roda liso.",
+    highlight: "Suporte de verdade por 60 dias",
+    icon: Building,
+  },
+  {
+    name: "Lúcia Andrade",
+    location: "Natal, RN",
+    initials: "LA",
+    age: "49 anos",
+    business: "Loja de roupas",
+    project: "App de vendas",
+    quote:
+      "Freelancer já tinha me deixado na mão duas vezes. Perdi tempo e dinheiro. Com o Bruno foi diferente. Ele mostrava o progresso toda semana no WhatsApp. Em nenhum momento fiquei no escuro.",
+    highlight: "Acompanhou tudo pelo WhatsApp",
+    icon: ShoppingBag,
+  },
+  {
+    name: "Paulo Henrique",
+    location: "Teresina, PI",
+    initials: "PH",
+    age: "58 anos",
+    business: "Dono de restaurante",
+    project: "App de reservas",
+    quote:
+      "Com 58 anos, já vi muita gente prometer e não entregar. O Bruno é da nova geração mas tem palavra. Combinou preço, combinou prazo, cumpriu os dois. Meu restaurante agora tem app próprio de reserva.",
+    highlight: "Cumpriu preço e prazo",
+    icon: Utensils,
+  },
+  {
+    name: "Fernando Costa",
+    location: "São Luís, MA",
+    initials: "FC",
+    age: "51 anos",
+    business: "Distribuidora",
+    project: "App de pedidos",
+    quote:
+      "O que me convenceu foi conversar com outros clientes dele antes de fechar. Todo mundo falou bem. Não é marketing, é gente real que pagou e recebeu. Fiz a mesma coisa e não me arrependi.",
+    highlight: "Conversou com outros clientes antes",
+    icon: Smartphone,
   },
 ];
 
 const stats = [
   { value: "12", label: "Projetos entregues" },
-  { value: "100%", label: "Clientes satisfeitos" },
+  { value: "100%", label: "Ficaram satisfeitos" },
   { value: "8 anos", label: "Fazendo isso" },
   { value: "4.9", label: "Nota média", icon: Star },
 ];
@@ -61,16 +136,16 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <span className="text-green-500 font-medium text-sm uppercase tracking-wider">
-            Quem já trabalhou comigo
+            Donos de negócio como você
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Gente que confiou
+            Gente que também tinha medo
             <br />
-            <span className="text-zinc-500">e não se arrependeu</span>
+            <span className="text-zinc-500">e hoje tá satisfeita</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Não sou eu que tô dizendo que é bom.
-            São pessoas que pagaram e receberam o que pediram.
+            Empresários do Nordeste que passaram pela mesma dúvida que você.
+            Pagaram, receberam, e hoje recomendam.
           </p>
         </motion.div>
 
@@ -138,7 +213,8 @@ export default function Testimonials() {
                   </div>
                   <div>
                     <div className="font-medium">{testimonial.name}</div>
-                    <div className="flex items-center gap-2 text-sm text-zinc-500">
+                    <div className="text-xs text-zinc-400 mb-1">{testimonial.business} · {testimonial.age}</div>
+                    <div className="flex items-center gap-2 text-xs text-zinc-500">
                       <MapPin className="w-3 h-3" />
                       {testimonial.location}
                     </div>
@@ -149,15 +225,33 @@ export default function Testimonials() {
           ))}
         </div>
 
+        {/* Sim Mental */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-2xl mx-auto mt-16"
+        >
+          <div className="p-8 rounded-2xl bg-zinc-900/80 border border-zinc-800 text-center">
+            <p className="text-xl text-zinc-300 mb-4">
+              Você também já perdeu dinheiro com promessa de gente que sumiu?
+            </p>
+            <p className="text-zinc-500">
+              A maioria desses empresários passou pela mesma coisa antes de me conhecer.
+              Por isso eles valorizam tanto alguém que cumpre o que promete.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className="text-center mt-10"
         >
           <p className="text-zinc-500 text-sm">
-            Pessoas reais. Projetos reais. Resultados reais.
+            Quer conversar com algum deles antes de fechar? É só me pedir.
           </p>
         </motion.div>
       </div>

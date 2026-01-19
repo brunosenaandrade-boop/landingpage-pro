@@ -69,15 +69,17 @@ export default function Pricing() {
           className="text-center mb-16"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            Quanto custa
+            O investimento
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Quanto custa ter
+            Agilson, vou ser direto
             <br />
-            <span className="text-zinc-500">seu próprio negócio?</span>
+            <span className="text-zinc-500">como você gosta</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Bem menos do que você imagina. E eu te ajudo do começo ao fim.
+            Empresa grande cobra R$ 150 mil, R$ 200 mil.
+            <br />
+            Eu vou fazer por uma fração disso. E você sabe que eu entrego.
           </p>
         </motion.div>
 
@@ -89,19 +91,39 @@ export default function Pricing() {
           className="max-w-4xl mx-auto"
         >
           <div className="rounded-3xl bg-zinc-900 border border-zinc-800 overflow-hidden relative">
+            {/* Ancoragem */}
+            <div className="p-6 bg-red-950/20 border-b border-red-900/30">
+              <div className="flex flex-wrap items-center justify-center gap-6 text-center">
+                <div>
+                  <div className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Empresa grande</div>
+                  <div className="text-2xl font-bold text-red-400 line-through">R$ 180.000</div>
+                  <div className="text-xs text-zinc-600">+ 8 meses de espera</div>
+                </div>
+                <div className="text-zinc-700 text-2xl">→</div>
+                <div>
+                  <div className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Freelancer</div>
+                  <div className="text-2xl font-bold text-red-400 line-through">R$ 40.000</div>
+                  <div className="text-xs text-zinc-600">+ risco de sumir</div>
+                </div>
+                <div className="text-zinc-700 text-2xl">→</div>
+                <div>
+                  <div className="text-xs text-green-500 uppercase tracking-wider mb-1">Comigo</div>
+                  <div className="text-2xl font-bold text-green-400">R$ 16.500</div>
+                  <div className="text-xs text-zinc-400">+ 7 anos de amizade</div>
+                </div>
+              </div>
+            </div>
+
             {/* Header */}
             <div className="p-8 md:p-12 bg-gradient-to-br from-zinc-900 to-zinc-950 border-b border-zinc-800">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Tudo incluído</h3>
+                  <h3 className="text-2xl font-bold mb-2">Tudo incluído, sem surpresa</h3>
                   <p className="text-zinc-400">
                     Os 3 apps + os bônus + 60 dias comigo te ajudando
                   </p>
                 </div>
                 <div className="text-right">
-                  <div className="text-sm text-zinc-500 line-through mb-1">
-                    De R$ 147.000
-                  </div>
                   <div className="text-5xl md:text-6xl font-bold gradient-text">
                     R$ 16.500
                   </div>
@@ -111,6 +133,9 @@ export default function Pricing() {
                     <span className="text-green-400 font-semibold">
                       ou 6x de R$ 2.750 sem juros
                     </span>
+                  </div>
+                  <div className="mt-2 text-xs text-zinc-500">
+                    Menos que uma moto. E te dá um negócio.
                   </div>
                 </div>
               </div>
@@ -196,15 +221,34 @@ export default function Pricing() {
                 </div>
               </div>
 
+              {/* Risk Reduction */}
+              <div className="mt-8 p-6 rounded-2xl bg-green-950/20 border border-green-900/30">
+                <h5 className="font-semibold text-green-400 mb-4 text-center">Por que você não tem nada a perder:</h5>
+                <div className="grid md:grid-cols-3 gap-4 text-sm">
+                  <div className="text-center">
+                    <div className="text-zinc-300 font-medium">Me conhece há 7 anos</div>
+                    <div className="text-zinc-500 text-xs">Você sabe onde me achar</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-zinc-300 font-medium">60 dias de suporte</div>
+                    <div className="text-zinc-500 text-xs">Qualquer problema, eu resolvo</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-zinc-300 font-medium">O app é seu pra sempre</div>
+                    <div className="text-zinc-500 text-xs">Não depende de mim depois</div>
+                  </div>
+                </div>
+              </div>
+
               {/* CTA */}
               <div className="mt-10 pt-8 border-t border-zinc-800">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                   <div className="flex items-center gap-3">
                     <ShieldCheck className="w-8 h-8 text-green-500" />
                     <div>
-                      <div className="font-medium">Minha palavra</div>
+                      <div className="font-medium">Minha palavra pra você</div>
                       <div className="text-sm text-zinc-500">
-                        Seu app funcionando em 45 dias. E 60 dias comigo pra te ajudar.
+                        45 dias pra entregar. 60 dias pra te ajudar. Se não cumprir, você me cobra.
                       </div>
                     </div>
                   </div>
@@ -213,7 +257,7 @@ export default function Pricing() {
                     target="_blank"
                     className="group flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow w-full sm:w-auto"
                   >
-                    Quero começar agora
+                    Bora fechar, Bruno
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
@@ -229,43 +273,52 @@ export default function Pricing() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto mt-20"
         >
-          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 text-center">
+          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-amber-950/20 to-zinc-950 border border-amber-900/30 text-center">
             <div className="inline-flex items-center gap-2 text-amber-500 mb-6">
               <Clock className="w-5 h-5" />
               <span className="font-medium text-sm uppercase tracking-wider">
-                Pense nisso
+                Agilson, pensa comigo
               </span>
             </div>
 
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Daqui 45 dias, onde você quer estar?
+              Você já teve essa ideia há quanto tempo?
             </h3>
 
             <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-              Com seu app na mão, ganhando dinheiro com os primeiros clientes...
-              ou ainda pensando, pesquisando, esperando o "momento certo"?
+              Quantos meses (ou anos) você ficou pensando nisso?
+              Pesquisando, conversando, esperando o "momento certo"?
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               <div className="p-5 rounded-2xl bg-red-950/20 border border-red-900/30">
-                <div className="text-red-400 font-medium mb-2">Se você esperar...</div>
+                <div className="text-red-400 font-medium mb-2">Se você esperar mais...</div>
                 <p className="text-zinc-500 text-sm">
-                  Daqui 6 meses você ainda vai estar pesquisando. E pode ser que
-                  alguém lance na sua cidade antes de você.
+                  Daqui 6 meses você ainda vai estar pensando.
+                  E alguém em Sergipe pode lançar antes de você.
+                  <br /><br />
+                  <span className="text-red-400/80 text-xs">O cara que chega primeiro, fica com o mercado.</span>
                 </p>
               </div>
               <div className="p-5 rounded-2xl bg-green-950/20 border border-green-900/30">
-                <div className="text-green-400 font-medium mb-2">Se você começar agora...</div>
+                <div className="text-green-400 font-medium mb-2">Se você fechar agora...</div>
                 <p className="text-zinc-500 text-sm">
-                  Em 45 dias seu app tá no ar. Em 90 dias você já tem
-                  os primeiros clientes pagando. Em 6 meses, um negócio de verdade.
+                  Em 45 dias seu app tá no ar.
+                  Em 90 dias você já tem clientes pagando.
+                  Em 6 meses, um negócio de verdade rodando.
+                  <br /><br />
+                  <span className="text-green-400/80 text-xs">E ainda leva na frente a vantagem de ser o primeiro.</span>
                 </p>
               </div>
             </div>
 
-            <p className="text-zinc-500 text-sm">
-              A melhor hora pra começar era ontem. A segunda melhor é agora.
-            </p>
+            <div className="p-4 rounded-xl bg-zinc-800/50 border border-zinc-700/50">
+              <p className="text-zinc-300 text-sm">
+                A gente se conhece há 7 anos, Agilson.
+                <br />
+                <span className="text-zinc-500">Você sabe que eu não vou te deixar na mão.</span>
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>

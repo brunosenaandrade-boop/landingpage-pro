@@ -25,11 +25,23 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 mb-4"
           >
             <Sparkles className="w-4 h-4 text-amber-500" />
             <span className="text-sm text-amber-400 font-medium">
               Proposta exclusiva para Agilson
+            </span>
+          </motion.div>
+
+          {/* Trust badge - desde 2018 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            className="mb-8"
+          >
+            <span className="text-zinc-500 text-sm">
+              A gente se conhece desde 2018. Você sabe que eu sou de palavra.
             </span>
           </motion.div>
 
@@ -40,7 +52,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
           >
-            Seu app de socorro
+            Agilson, seu app
             <br />
             <span className="gradient-text">pronto em 45 dias</span>
           </motion.h1>
@@ -62,15 +74,19 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="flex items-center justify-center gap-6 mb-10"
+            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-10"
           >
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Users className="w-4 h-4 text-green-500" />
-              <span><span className="text-white font-medium">12</span> projetos como esse já entregues</span>
+              <span><span className="text-white font-medium">12</span> donos de negócio já confiaram</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Clock className="w-4 h-4 text-blue-500" />
               <span>Pronto em <span className="text-white font-medium">45 dias</span></span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-zinc-500">
+              <Sparkles className="w-4 h-4 text-amber-500" />
+              <span><span className="text-white font-medium">7 anos</span> de amizade</span>
             </div>
           </motion.div>
 

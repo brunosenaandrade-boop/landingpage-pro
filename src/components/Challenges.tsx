@@ -14,47 +14,47 @@ import {
 const challenges = [
   {
     icon: Building,
-    title: "Contratar uma empresa grande",
+    title: "Empresa grande de tecnologia",
     problems: [
-      "Cobram R$ 150 mil ou mais",
-      "Demora 6 meses a 1 ano",
-      "Você fala com gerente, não com quem faz",
-      "Qualquer mudança é reunião e mais reunião",
+      "Cobram R$ 150 mil, R$ 200 mil...",
+      "Demora 8 meses, 1 ano...",
+      "Você vira um número, um ticket",
+      "Qualquer mudança é semana de reunião",
     ],
-    verdict: "Caro demais e demorado",
+    verdict: "Eles não precisam de você",
   },
   {
     icon: Users,
-    title: "Contratar um freelancer qualquer",
+    title: "Freelancer da internet",
     problems: [
-      "Não sabe se ele é bom mesmo",
-      "Pode sumir no meio do projeto",
-      "Qualidade duvidosa",
-      "Se der problema, você fica na mão",
+      "Você não sabe quem é de verdade",
+      "Recebe o adiantamento e some",
+      "Entrega meia-boca e desaparece",
+      "Você fica sem app e sem dinheiro",
     ],
-    verdict: "Muito arriscado",
+    verdict: "Já ouviu essa história, né?",
   },
   {
     icon: DollarSign,
-    title: "Comprar um sistema pronto",
+    title: "Alugar um sistema pronto",
     problems: [
-      "Paga mensalidade pra sempre",
+      "Paga mensalidade até morrer",
       "Não pode mudar nada",
       "Se a empresa fechar, você perde tudo",
-      "Nunca é seu de verdade",
+      "Nunca vai ser seu de verdade",
     ],
-    verdict: "Você nunca é dono",
+    verdict: "É como alugar casa a vida toda",
   },
   {
     icon: Clock,
-    title: "Aprender a fazer sozinho",
+    title: "Tentar fazer sozinho",
     problems: [
-      "Leva anos pra aprender",
-      "Seu negócio fica parado",
+      "Você tem restaurante pra cuidar",
+      "Não tem tempo pra aprender isso",
       "Vai errar muito até acertar",
-      "Tempo perdido é dinheiro perdido",
+      "Enquanto isso, o concorrente lança",
     ],
-    verdict: "Não faz sentido",
+    verdict: "Seu tempo vale mais que isso",
   },
 ];
 
@@ -64,16 +64,16 @@ const solution = [
     solution: "R$ 16.500 e em 45 dias você tá faturando",
   },
   {
-    problem: "Não sei fazer app",
-    solution: "Eu faço tudo e te entrego funcionando",
+    problem: "Não conheço ninguém de confiança",
+    solution: "A gente se conhece desde 2018, Agilson",
   },
   {
     problem: "E se der problema depois?",
-    solution: "60 dias de ajuda direto comigo pelo WhatsApp",
+    solution: "60 dias comigo no WhatsApp. Você sabe onde me achar",
   },
   {
     problem: "Vou depender de alguém pra sempre?",
-    solution: "Não. O app é seu. Faz o que quiser com ele",
+    solution: "O app é seu. Não precisa de mim depois se não quiser",
   },
 ];
 
@@ -92,17 +92,33 @@ export default function Challenges() {
           className="text-center mb-16"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            O problema
+            Você já passou por isso
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Por que é tão difícil
+            Dono de negócio sofre
             <br />
-            <span className="text-zinc-500">fazer um app?</span>
+            <span className="text-zinc-500">na mão de quem promete e não entrega</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Você já deve ter pensado em algumas opções.
-            Deixa eu te mostrar por que nenhuma delas é boa.
+            Você é empresário há décadas. Já viu de tudo.
+            Sabe como é difícil achar gente séria pra fazer um serviço direito.
           </p>
+        </motion.div>
+
+        {/* Sim Mental */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto mb-16"
+        >
+          <div className="p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800">
+            <p className="text-lg text-zinc-300 text-center">
+              Quantas vezes você já pagou adiantado e o cara sumiu?
+              <br />
+              <span className="text-zinc-500 text-base">É a história de todo empresário brasileiro.</span>
+            </p>
+          </div>
         </motion.div>
 
         {/* Challenges grid */}
@@ -195,7 +211,9 @@ export default function Challenges() {
             <div className="p-8 md:p-10 bg-zinc-800/30 border-t border-zinc-800">
               <div className="text-center">
                 <p className="text-zinc-400">
-                  Eu cuido da parte técnica. Você cuida do seu negócio.
+                  Você cuida do restaurante. Eu cuido do app.
+                  <br />
+                  <span className="text-zinc-500 text-sm">Cada um no que sabe fazer.</span>
                 </p>
               </div>
             </div>

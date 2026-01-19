@@ -19,12 +19,16 @@ export default function Footer() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Agilson, bora fazer
+              Agilson, a gente se conhece
               <br />
-              <span className="gradient-text">seu app?</span>
+              <span className="gradient-text">há 7 anos</span>
             </h2>
-            <p className="text-xl text-zinc-400 mb-6">
-              Daqui 45 dias você pode estar ganhando dinheiro com isso.
+            <p className="text-xl text-zinc-400 mb-4">
+              Você sabe que eu sou de palavra.
+            </p>
+            <p className="text-zinc-500 mb-8 max-w-lg mx-auto">
+              Não sou um estranho da internet. Você sabe quem eu sou,
+              sabe onde me encontrar, e sabe que eu entrego o que prometo.
             </p>
 
             {/* Trust elements */}
@@ -35,11 +39,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2 text-sm text-zinc-400">
                 <Clock className="w-4 h-4 text-blue-500" />
-                <span>60 dias comigo te ajudando</span>
+                <span>60 dias de suporte</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-zinc-400">
                 <Shield className="w-4 h-4 text-green-500" />
-                <span>O app é seu</span>
+                <span>O app é seu pra sempre</span>
               </div>
             </div>
 
@@ -49,9 +53,13 @@ export default function Footer() {
               className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow"
             >
               <MessageCircle className="w-6 h-6" />
-              Vamos conversar
+              Bora fechar isso, Bruno
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
+
+            <p className="mt-6 text-zinc-600 text-sm">
+              Ou me liga se preferir: (48) 99864-9898
+            </p>
           </motion.div>
         </div>
       </section>
@@ -70,7 +78,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-zinc-500 text-sm">
-              Proposta exclusiva para Agilson &middot; Janeiro 2026
+              Proposta exclusiva para Agilson &middot; Janeiro 2026 &middot; Amigos desde 2018
             </p>
           </div>
         </div>
