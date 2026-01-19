@@ -108,8 +108,8 @@ const testimonials = [
     business: "Distribuidora",
     project: "App de pedidos",
     quote:
-      "O que me convenceu foi conversar com outros clientes dele antes de fechar. Todo mundo falou bem. Não é marketing, é gente real que pagou e recebeu. Fiz a mesma coisa e não me arrependi.",
-    highlight: "Conversou com outros clientes antes",
+      "Meus vendedores faziam tudo no papel. Erro toda hora, pedido perdido, cliente reclamando. Agora tudo pelo app. Vendedor faz o pedido na hora, já cai no sistema. Zero erro, cliente satisfeito.",
+    highlight: "Zero erro nos pedidos",
     icon: Smartphone,
   },
 ];
