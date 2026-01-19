@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Users, Clock, TrendingUp, Sparkles, Target } from "lucide-react";
+import { ArrowRight, Users, Clock, TrendingUp, Sparkles } from "lucide-react";
 
 export default function Hero() {
   const [clients, setClients] = useState(150);
@@ -40,9 +40,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
           >
-            Sua ideia pronta para
+            Seu app de socorro
             <br />
-            <span className="gradient-text">faturar em 45 dias</span>
+            <span className="gradient-text">pronto em 45 dias</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -52,9 +52,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-zinc-400 max-w-2xl mx-auto mb-4"
           >
-            Sistema completo de assistência veicular com 3 apps + painel admin.
+            Eu vou criar o Seguro Pneu Pro pra você.
             <br />
-            <span className="text-white font-medium">Código 100% seu, sem mensalidade, sem dependência.</span>
+            <span className="text-white font-medium">Um app pro cliente, um pro socorrista, e uma tela pra você controlar tudo.</span>
           </motion.p>
 
           {/* Social proof mini */}
@@ -66,11 +66,11 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Users className="w-4 h-4 text-green-500" />
-              <span><span className="text-white font-medium">12+</span> projetos entregues</span>
+              <span><span className="text-white font-medium">12</span> projetos como esse já entregues</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Clock className="w-4 h-4 text-blue-500" />
-              <span>Entrega em <span className="text-white font-medium">30-45 dias</span></span>
+              <span>Pronto em <span className="text-white font-medium">45 dias</span></span>
             </div>
           </motion.div>
 
@@ -85,14 +85,14 @@ export default function Hero() {
               href="#pricing"
               className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow"
             >
-              Ver investimento completo
+              Ver quanto custa
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#apps"
               className="flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-800/50 transition-all duration-300"
             >
-              Ver o sistema
+              Ver como funciona
             </a>
           </motion.div>
 
@@ -108,11 +108,11 @@ export default function Hero() {
               <div className="p-6 border-b border-zinc-800 bg-gradient-to-r from-zinc-900 to-zinc-950">
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center">
-                    <Target className="w-5 h-5 text-amber-500" />
+                    <TrendingUp className="w-5 h-5 text-amber-500" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-bold text-lg">Simule seu faturamento</h3>
-                    <p className="text-sm text-zinc-500">Arraste e veja o potencial do negócio</p>
+                    <h3 className="font-bold text-lg">Quanto você pode ganhar?</h3>
+                    <p className="text-sm text-zinc-500">Arraste e veja</p>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Hero() {
                 {/* Slider */}
                 <div className="mb-8">
                   <div className="flex items-center justify-between mb-4">
-                    <label className="text-sm text-zinc-400">Quantos clientes você pretende ter?</label>
+                    <label className="text-sm text-zinc-400">Se você tiver essa quantidade de clientes pagando por mês:</label>
                     <span className="text-2xl font-bold text-white">{clients}</span>
                   </div>
                   <input
@@ -143,28 +143,25 @@ export default function Hero() {
                 {/* Results */}
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
-                    <div className="text-sm text-zinc-500 mb-1">Receita mensal</div>
+                    <div className="text-sm text-zinc-500 mb-1">Você recebe por mês</div>
                     <div className="text-2xl font-bold gradient-text">
                       R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                     </div>
-                    <div className="text-xs text-zinc-600">recorrente, todo mês</div>
+                    <div className="text-xs text-zinc-600">todo mês na sua conta</div>
                   </div>
                   <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
-                    <div className="text-sm text-zinc-500 mb-1">Receita anual</div>
+                    <div className="text-sm text-zinc-500 mb-1">Em 1 ano</div>
                     <div className="text-2xl font-bold text-green-500">
                       R$ {(revenue * 12).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                     </div>
-                    <div className="text-xs text-zinc-600">projeção 12 meses</div>
+                    <div className="text-xs text-zinc-600">se mantiver esses clientes</div>
                   </div>
                   <div className="p-5 rounded-2xl bg-green-900/20 border border-green-800/30 text-center">
                     <div className="text-sm text-zinc-500 mb-1">Em 2 anos</div>
-                    <div className="flex items-center justify-center gap-1">
-                      <TrendingUp className="w-5 h-5 text-green-500" />
-                      <span className="text-2xl font-bold text-green-500">
-                        R$ {(revenue * 24).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}
-                      </span>
+                    <div className="text-2xl font-bold text-green-500">
+                      R$ {(revenue * 24).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}
                     </div>
-                    <div className="text-xs text-zinc-600">potencial acumulado</div>
+                    <div className="text-xs text-zinc-600">seu negócio crescendo</div>
                   </div>
                 </div>
 
@@ -173,22 +170,22 @@ export default function Hero() {
                   <p className="text-sm text-amber-200 text-center">
                     {clients >= 200 ? (
                       <>
-                        <span className="font-semibold">Números impressionantes!</span> Com {clients} clientes você constrói uma receita de{' '}
-                        <span className="font-bold">R$ {(revenue * 12).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}/ano</span>.{' '}
-                        Isso é um negócio sólido.
+                        <span className="font-semibold">Olha esse número!</span> Com {clients} clientes você ganha{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} por mês</span>.{' '}
+                        É dinheiro entrando todo mês no automático.
                       </>
                     ) : clients >= 100 ? (
                       <>
-                        <span className="font-semibold">Meta alcançável.</span> {clients} clientes representa{' '}
-                        menos de 1% do mercado da sua cidade. Com{' '}
-                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>{' '}
-                        você já tem um negócio funcionando.
+                        <span className="font-semibold">Começando bem.</span> {clients} clientes é pouca gente.{' '}
+                        Imagina só: com{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} por mês</span>{' '}
+                        você já paga suas contas e ainda sobra.
                       </>
                     ) : (
                       <>
-                        <span className="font-semibold">Só o começo.</span> Com {clients} clientes você já fatura{' '}
-                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>.{' '}
-                        Imagine quando chegar em 200, 300...
+                        <span className="font-semibold">É só o começo.</span> Com {clients} clientes você já ganha{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })} por mês</span>.{' '}
+                        E vai só aumentar.
                       </>
                     )}
                   </p>

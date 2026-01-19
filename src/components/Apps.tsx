@@ -19,62 +19,62 @@ import {
 const apps = [
   {
     icon: User,
-    name: "App Cliente",
+    name: "App do Cliente",
     color: "from-red-500 to-red-600",
-    description: "Para os assinantes do serviço",
+    description: "Pro seu cliente pedir socorro",
     mockupColor: "bg-gradient-to-br from-red-600 to-red-800",
     highlights: [
-      { icon: MapPin, text: "GPS em tempo real" },
-      { icon: CreditCard, text: "PIX e Cartão" },
-      { icon: Bell, text: "Push notifications" },
+      { icon: MapPin, text: "Vê no mapa" },
+      { icon: CreditCard, text: "Paga pelo app" },
+      { icon: Bell, text: "Recebe aviso" },
     ],
     features: [
-      "Cadastro com validação de CPF",
-      "Múltiplos planos de assinatura",
-      "Solicitação de socorro em 2 cliques",
-      "Acompanhamento do prestador no mapa",
-      "Histórico completo de atendimentos",
-      "Pagamento automático recorrente",
+      "Cadastro fácil com CPF",
+      "Escolhe o plano e paga",
+      "Pede socorro em 2 toques",
+      "Vê o socorrista chegando no mapa",
+      "Histórico de tudo que pediu",
+      "Pagamento sai automático todo mês",
     ],
   },
   {
     icon: Wrench,
-    name: "App Prestador",
+    name: "App do Socorrista",
     color: "from-blue-500 to-blue-600",
-    description: "Para os socorristas parceiros",
+    description: "Pro borracheiro/guincheiro",
     mockupColor: "bg-gradient-to-br from-blue-600 to-blue-800",
     highlights: [
-      { icon: Navigation, text: "Waze/Google Maps" },
-      { icon: MessageCircle, text: "Chat integrado" },
-      { icon: Clock, text: "Timer de atendimento" },
+      { icon: Navigation, text: "Abre o Waze" },
+      { icon: MessageCircle, text: "Fala com cliente" },
+      { icon: Clock, text: "Marca o tempo" },
     ],
     features: [
-      "Notificação instantânea de chamados",
-      "Aceite com tempo limite configurável",
-      "Navegação integrada (Waze/Maps)",
-      "Chat em tempo real com cliente",
-      "Fotos antes/depois do serviço",
-      "Dashboard de ganhos semanais",
+      "Recebe chamado no celular na hora",
+      "Aceita ou recusa com um toque",
+      "Abre o Waze direto pro endereço",
+      "Conversa com o cliente pelo app",
+      "Tira foto do serviço feito",
+      "Vê quanto ganhou na semana",
     ],
   },
   {
     icon: LayoutDashboard,
-    name: "Painel Admin",
+    name: "Sua Tela de Controle",
     color: "from-zinc-600 to-zinc-700",
-    description: "Controle total do seu negócio",
+    description: "Pra você ver tudo",
     mockupColor: "bg-gradient-to-br from-zinc-700 to-zinc-900",
     highlights: [
-      { icon: BarChart3, text: "Métricas em tempo real" },
-      { icon: Settings, text: "100% configurável" },
-      { icon: CreditCard, text: "Controle financeiro" },
+      { icon: BarChart3, text: "Números na tela" },
+      { icon: Settings, text: "Muda o que quiser" },
+      { icon: CreditCard, text: "Vê o dinheiro" },
     ],
     features: [
-      "Dashboard com KPIs principais",
-      "Gestão completa de clientes",
-      "Aprovação/bloqueio de prestadores",
-      "Monitoramento de chamados ao vivo",
-      "Relatórios financeiros detalhados",
-      "Configuração de planos e preços",
+      "Vê quantos clientes tem",
+      "Vê todos os socorristas",
+      "Acompanha os chamados ao vivo",
+      "Vê quanto entrou de dinheiro",
+      "Muda preços quando quiser",
+      "Bloqueia quem não paga",
     ],
   },
 ];
@@ -91,16 +91,16 @@ export default function Apps() {
           className="text-center mb-20"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            Ecossistema completo
+            O que você recebe
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            3 aplicativos profissionais
+            3 aplicativos
             <br />
-            <span className="text-zinc-500">prontos para sua marca</span>
+            <span className="text-zinc-500">com a sua marca</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Sistema completo que conecta clientes, prestadores e você.
-            Tudo personalizado com sua identidade visual.
+            Um pro seu cliente. Um pro socorrista. E uma tela pra você controlar tudo.
+            Tudo com o nome "Seguro Pneu Pro" e do seu jeito.
           </p>
         </motion.div>
 
@@ -177,7 +177,7 @@ export default function Apps() {
           ))}
         </div>
 
-        {/* Tech stack + differentiator */}
+        {/* Bottom note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -188,41 +188,29 @@ export default function Apps() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h4 className="text-xl font-bold mb-3">
-                  Tecnologia de ponta, código seu
+                  O app é seu. Pra sempre.
                 </h4>
                 <p className="text-zinc-400 text-sm mb-4">
-                  Diferente de soluções "white label" onde você paga mensalidade eterna,
-                  aqui você recebe o código fonte completo. É seu patrimônio digital.
+                  Diferente de alugar um sistema pronto, aqui você recebe tudo.
+                  É como comprar uma casa em vez de alugar. É seu, faz o que quiser.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Flutter", "Supabase", "PostgreSQL", "Firebase", "Google Maps"].map(
-                    (tech) => (
-                      <span
-                        key={tech}
-                        className="font-mono text-xs px-3 py-1.5 rounded-lg bg-zinc-800 border border-zinc-700 text-zinc-400"
-                      >
-                        {tech}
-                      </span>
-                    )
-                  )}
-                </div>
               </div>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">100%</div>
-                  <div className="text-xs text-zinc-500">Código fonte seu</div>
+                  <div className="text-2xl font-bold gradient-text">Seu</div>
+                  <div className="text-xs text-zinc-500">O app é seu</div>
                 </div>
                 <div className="p-4 rounded-xl bg-zinc-800/50">
                   <div className="text-2xl font-bold gradient-text">R$ 0</div>
-                  <div className="text-xs text-zinc-500">Mensalidade do sistema</div>
+                  <div className="text-xs text-zinc-500">Mensalidade do app</div>
                 </div>
                 <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">iOS + Android</div>
-                  <div className="text-xs text-zinc-500">Multiplataforma</div>
+                  <div className="text-2xl font-bold gradient-text">Android + iPhone</div>
+                  <div className="text-xs text-zinc-500">Funciona nos dois</div>
                 </div>
                 <div className="p-4 rounded-xl bg-zinc-800/50">
-                  <div className="text-2xl font-bold gradient-text">Ilimitado</div>
-                  <div className="text-xs text-zinc-500">Usuários/clientes</div>
+                  <div className="text-2xl font-bold gradient-text">Sem limite</div>
+                  <div className="text-xs text-zinc-500">De clientes</div>
                 </div>
               </div>
             </div>

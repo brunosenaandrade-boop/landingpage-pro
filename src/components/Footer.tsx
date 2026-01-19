@@ -19,27 +19,27 @@ export default function Footer() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Agilson, vamos tirar
+              Agilson, bora fazer
               <br />
-              <span className="gradient-text">sua ideia do papel?</span>
+              <span className="gradient-text">seu app?</span>
             </h2>
             <p className="text-xl text-zinc-400 mb-6">
-              Daqui 45 dias você pode estar com seu negócio funcionando.
+              Daqui 45 dias você pode estar ganhando dinheiro com isso.
             </p>
 
             {/* Trust elements */}
             <div className="flex flex-wrap justify-center gap-6 mb-10">
               <div className="flex items-center gap-2 text-sm text-zinc-400">
                 <Rocket className="w-4 h-4 text-red-500" />
-                <span>Entrega em 45 dias</span>
+                <span>Pronto em 45 dias</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-zinc-400">
                 <Clock className="w-4 h-4 text-blue-500" />
-                <span>60 dias de suporte</span>
+                <span>60 dias comigo te ajudando</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-zinc-400">
                 <Shield className="w-4 h-4 text-green-500" />
-                <span>Código 100% seu</span>
+                <span>O app é seu</span>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-semibold">Bruno Sena</span>
-                <p className="text-xs text-zinc-500">Desenvolvedor Full Stack</p>
+                <p className="text-xs text-zinc-500">Faço apps e sistemas</p>
               </div>
             </div>
             <p className="text-zinc-500 text-sm">

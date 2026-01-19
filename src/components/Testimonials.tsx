@@ -1,49 +1,49 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote, Smartphone, ShoppingCart, Truck, MapPin, CheckCircle } from "lucide-react";
+import { Star, Quote, MapPin, CheckCircle, Smartphone, Truck, Calendar } from "lucide-react";
 
 const testimonials = [
   {
     name: "Carlos Mendes",
     location: "Joinville, SC",
     initials: "CM",
-    role: "Dono de distribuidora",
-    project: "App de delivery B2B",
+    business: "Distribuidora de bebidas",
+    project: "App de pedidos",
     quote:
-      "Precisava de um sistema para meus vendedores fazerem pedidos em campo. O Bruno entendeu exatamente o que eu precisava e entregou antes do prazo. Hoje minha equipe não vive sem o app.",
-    highlight: "Entregue antes do prazo",
-    icon: ShoppingCart,
+      "Meus vendedores faziam pedido no papel e sempre dava erro. Pedi pro Bruno fazer um app. Agora é tudo pelo celular, não perde mais pedido. Entregou antes do prazo.",
+    highlight: "Entregou antes do prazo",
+    icon: Smartphone,
   },
   {
     name: "Patricia Santos",
     location: "Florianópolis, SC",
     initials: "PS",
-    role: "Empresária",
-    project: "Sistema de agendamentos",
+    business: "Clínica de estética",
+    project: "App de agendamento",
     quote:
-      "Minha clínica precisava de um sistema de agendamento que funcionasse bem. O Bruno fez tudo personalizado, com lembretes automáticos. Reduzi faltas em 40%. Profissional demais.",
-    highlight: "Reduziu faltas em 40%",
-    icon: Smartphone,
+      "Cliente esquecia da consulta e não vinha. Agora o app manda lembrete no celular. Diminuiu muito as faltas. O Bruno entendeu direitinho o que eu precisava.",
+    highlight: "Clientes param de faltar",
+    icon: Calendar,
   },
   {
     name: "Roberto Lima",
     location: "Curitiba, PR",
     initials: "RL",
-    role: "Gestor de frota",
+    business: "Transportadora",
     project: "App de rastreamento",
     quote:
-      "Terceirizamos a frota e precisávamos de controle. O app que o Bruno desenvolveu me dá visão total dos veículos. Integrou com nosso ERP sem dor de cabeça. Excelente trabalho.",
-    highlight: "Integração com ERP",
+      "Precisava saber onde meus caminhões estavam. O Bruno fez um app que mostra tudo no mapa. Agora sei onde cada um está a qualquer hora. Muito bom.",
+    highlight: "Sabe onde está cada caminhão",
     icon: Truck,
   },
 ];
 
 const stats = [
-  { value: "12+", label: "Projetos entregues" },
-  { value: "100%", label: "Taxa de entrega" },
-  { value: "8", label: "Anos de experiência" },
-  { value: "4.9", label: "Avaliação média", icon: Star },
+  { value: "12", label: "Projetos entregues" },
+  { value: "100%", label: "Clientes satisfeitos" },
+  { value: "8 anos", label: "Fazendo isso" },
+  { value: "4.9", label: "Nota média", icon: Star },
 ];
 
 export default function Testimonials() {
@@ -61,16 +61,16 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <span className="text-green-500 font-medium text-sm uppercase tracking-wider">
-            Portfólio
+            Quem já trabalhou comigo
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Projetos que já entreguei
+            Gente que confiou
             <br />
-            <span className="text-zinc-500">e clientes satisfeitos</span>
+            <span className="text-zinc-500">e não se arrependeu</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Cada projeto é único, mas meu compromisso é sempre o mesmo:
-            entregar funcionando, no prazo, com qualidade.
+            Não sou eu que tô dizendo que é bom.
+            São pessoas que pagaram e receberam o que pediram.
           </p>
         </motion.div>
 
@@ -157,7 +157,7 @@ export default function Testimonials() {
           className="text-center mt-16"
         >
           <p className="text-zinc-500 text-sm">
-            Projetos reais entregues. Clientes reais satisfeitos.
+            Pessoas reais. Projetos reais. Resultados reais.
           </p>
         </motion.div>
       </div>

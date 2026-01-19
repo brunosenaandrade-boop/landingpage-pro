@@ -5,75 +5,75 @@ import {
   XCircle,
   Clock,
   DollarSign,
-  Code,
   Users,
   AlertTriangle,
   CheckCircle,
+  Building,
 } from "lucide-react";
 
 const challenges = [
   {
-    icon: Code,
-    title: "Desenvolver do zero",
+    icon: Building,
+    title: "Contratar uma empresa grande",
     problems: [
-      "6-12 meses de desenvolvimento",
-      "Equipe de 3-5 desenvolvedores",
-      "R$ 150.000+ de investimento",
-      "Alto risco de falhas",
+      "Cobram R$ 150 mil ou mais",
+      "Demora 6 meses a 1 ano",
+      "Você fala com gerente, não com quem faz",
+      "Qualquer mudança é reunião e mais reunião",
     ],
-    verdict: "Inviável para a maioria",
+    verdict: "Caro demais e demorado",
   },
   {
     icon: Users,
-    title: "Contratar freelancer",
+    title: "Contratar um freelancer qualquer",
     problems: [
-      "Qualidade inconsistente",
-      "Atrasos frequentes",
-      "Comunicação difícil",
-      "Projeto abandonado no meio",
+      "Não sabe se ele é bom mesmo",
+      "Pode sumir no meio do projeto",
+      "Qualidade duvidosa",
+      "Se der problema, você fica na mão",
     ],
-    verdict: "Arriscado demais",
+    verdict: "Muito arriscado",
   },
   {
     icon: DollarSign,
-    title: "Comprar solução pronta",
+    title: "Comprar um sistema pronto",
     problems: [
-      "Código fechado (não é seu)",
-      "Mensalidade eterna",
-      "Sem personalização",
-      "Dependência do fornecedor",
+      "Paga mensalidade pra sempre",
+      "Não pode mudar nada",
+      "Se a empresa fechar, você perde tudo",
+      "Nunca é seu de verdade",
     ],
     verdict: "Você nunca é dono",
   },
   {
     icon: Clock,
-    title: "Aprender a programar",
+    title: "Aprender a fazer sozinho",
     problems: [
-      "2-3 anos de estudo",
-      "Mercado muda rápido",
-      "Perda de foco no negócio",
-      "Tempo = dinheiro perdido",
+      "Leva anos pra aprender",
+      "Seu negócio fica parado",
+      "Vai errar muito até acertar",
+      "Tempo perdido é dinheiro perdido",
     ],
-    verdict: "Tempo demais",
+    verdict: "Não faz sentido",
   },
 ];
 
 const solution = [
   {
-    problem: "Preciso de R$ 150k+ para começar",
-    solution: "R$ 16.500 e você começa a faturar em 45 dias",
+    problem: "Preciso de R$ 150 mil pra começar",
+    solution: "R$ 16.500 e em 45 dias você tá faturando",
   },
   {
-    problem: "Não sei programar",
-    solution: "Entrego funcionando + treinamento completo",
+    problem: "Não sei fazer app",
+    solution: "Eu faço tudo e te entrego funcionando",
   },
   {
     problem: "E se der problema depois?",
-    solution: "60 dias de suporte direto comigo pelo WhatsApp",
+    solution: "60 dias de ajuda direto comigo pelo WhatsApp",
   },
   {
-    problem: "Vou ficar dependente de alguém?",
-    solution: "Código fonte 100% seu, faça o que quiser com ele",
+    problem: "Vou depender de alguém pra sempre?",
+    solution: "Não. O app é seu. Faz o que quiser com ele",
   },
 ];
 
@@ -92,16 +92,16 @@ export default function Challenges() {
           className="text-center mb-16"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            A realidade
+            O problema
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Por que 90% desistem
+            Por que é tão difícil
             <br />
-            <span className="text-zinc-500">antes de começar</span>
+            <span className="text-zinc-500">fazer um app?</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Você provavelmente já pensou em algumas alternativas.
-            Deixa eu te mostrar por que elas não funcionam.
+            Você já deve ter pensado em algumas opções.
+            Deixa eu te mostrar por que nenhuma delas é boa.
           </p>
         </motion.div>
 
@@ -159,7 +159,7 @@ export default function Challenges() {
         >
           <div className="text-center mb-10">
             <h3 className="text-2xl md:text-3xl font-bold">
-              A solução que <span className="gradient-text">elimina tudo isso</span>
+              Comigo é <span className="gradient-text">diferente</span>
             </h3>
           </div>
 
@@ -195,7 +195,7 @@ export default function Challenges() {
             <div className="p-8 md:p-10 bg-zinc-800/30 border-t border-zinc-800">
               <div className="text-center">
                 <p className="text-zinc-400">
-                  Eu cuido da tecnologia. Você foca no que importa: construir seu negócio.
+                  Eu cuido da parte técnica. Você cuida do seu negócio.
                 </p>
               </div>
             </div>

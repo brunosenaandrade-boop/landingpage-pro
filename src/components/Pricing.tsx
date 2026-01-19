@@ -12,38 +12,38 @@ import {
 } from "lucide-react";
 
 const included = [
-  "App do Cliente (Android + iOS)",
-  "App do Prestador (Android + iOS)",
-  "Painel Administrativo Web completo",
-  "Código fonte 100% seu",
-  "Sistema de pagamentos (PIX + Cartão)",
-  "GPS e rastreamento em tempo real",
-  "Notificações push configuradas",
-  "Banco de dados configurado",
-  "Publicação nas lojas incluída",
-  "60 dias de suporte técnico",
-  "Treinamento em vídeo completo",
-  "Guia de aquisição de clientes",
+  "App pro seu cliente pedir socorro",
+  "App pro socorrista receber o chamado",
+  "Uma tela pra você controlar tudo",
+  "O app é seu, pra sempre",
+  "Cliente paga pelo app (PIX ou cartão)",
+  "Vê o socorrista chegando no mapa",
+  "Aviso no celular quando alguém pede socorro",
+  "Tudo configurado e funcionando",
+  "Eu coloco nas lojas pra você",
+  "60 dias comigo no WhatsApp",
+  "Te ensino a usar em vídeo",
+  "Te mostro como conseguir clientes",
 ];
 
 const bonuses = [
   {
     icon: Gift,
-    title: "Guia de Aquisição de Clientes",
+    title: "Como conseguir seus primeiros clientes",
     value: "R$ 1.997",
-    description: "O mesmo método que uso para meus clientes conseguirem os primeiros 50 assinantes",
+    description: "O mesmo jeito que meus clientes usam pra conseguir os primeiros 50 assinantes",
   },
   {
     icon: Zap,
-    title: "Configuração Completa de Infraestrutura",
+    title: "Tudo configurado e no ar",
     value: "R$ 2.500",
-    description: "Servidor, domínio, SSL, banco de dados — tudo configurado e funcionando",
+    description: "Eu deixo tudo funcionando antes de entregar. Você não precisa fazer nada",
   },
   {
     icon: ShieldCheck,
-    title: "Suporte Direto por 60 dias",
+    title: "60 dias comigo no WhatsApp",
     value: "R$ 3.000",
-    description: "Acesso direto a mim pelo WhatsApp para qualquer dúvida ou ajuste",
+    description: "Qualquer dúvida, qualquer problema, é só me chamar que eu resolvo",
   },
 ];
 
@@ -69,13 +69,15 @@ export default function Pricing() {
           className="text-center mb-16"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            Investimento
+            Quanto custa
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Quanto custa ter seu próprio negócio?
+            Quanto custa ter
+            <br />
+            <span className="text-zinc-500">seu próprio negócio?</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Muito menos do que você imagina. E com suporte completo.
+            Bem menos do que você imagina. E eu te ajudo do começo ao fim.
           </p>
         </motion.div>
 
@@ -91,9 +93,9 @@ export default function Pricing() {
             <div className="p-8 md:p-12 bg-gradient-to-br from-zinc-900 to-zinc-950 border-b border-zinc-800">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Pacote Completo</h3>
+                  <h3 className="text-2xl font-bold mb-2">Tudo incluído</h3>
                   <p className="text-zinc-400">
-                    Sistema completo + bônus + 60 dias de suporte dedicado
+                    Os 3 apps + os bônus + 60 dias comigo te ajudando
                   </p>
                 </div>
                 <div className="text-right">
@@ -121,7 +123,7 @@ export default function Pricing() {
                 <div>
                   <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
                     <Check className="w-5 h-5 text-green-500" />
-                    O que está incluso
+                    O que você recebe
                   </h4>
                   <div className="space-y-3">
                     {included.map((item) => (
@@ -139,7 +141,7 @@ export default function Pricing() {
                 <div>
                   <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
                     <Gift className="w-5 h-5 text-amber-500" />
-                    Bônus exclusivos
+                    Ainda leva de brinde
                   </h4>
                   <div className="space-y-4">
                     {bonuses.map((bonus) => (
@@ -200,9 +202,9 @@ export default function Pricing() {
                   <div className="flex items-center gap-3">
                     <ShieldCheck className="w-8 h-8 text-green-500" />
                     <div>
-                      <div className="font-medium">Compromisso de entrega</div>
+                      <div className="font-medium">Minha palavra</div>
                       <div className="text-sm text-zinc-500">
-                        Sistema funcionando em 45 dias + 60 dias de suporte.
+                        Seu app funcionando em 45 dias. E 60 dias comigo pra te ajudar.
                       </div>
                     </div>
                   </div>
@@ -240,29 +242,29 @@ export default function Pricing() {
             </h3>
 
             <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-              Com seu app nas lojas, recebendo os primeiros assinantes e construindo
-              seu negócio — ou ainda pesquisando orçamentos e adiando a decisão?
+              Com seu app na mão, ganhando dinheiro com os primeiros clientes...
+              ou ainda pensando, pesquisando, esperando o "momento certo"?
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               <div className="p-5 rounded-2xl bg-red-950/20 border border-red-900/30">
                 <div className="text-red-400 font-medium mb-2">Se você esperar...</div>
                 <p className="text-zinc-500 text-sm">
-                  Mais 6 meses pesquisando, comparando, esperando o "momento certo"
-                  que nunca chega. Enquanto isso, alguém lança na sua região.
+                  Daqui 6 meses você ainda vai estar pesquisando. E pode ser que
+                  alguém lance na sua cidade antes de você.
                 </p>
               </div>
               <div className="p-5 rounded-2xl bg-green-950/20 border border-green-900/30">
                 <div className="text-green-400 font-medium mb-2">Se você começar agora...</div>
                 <p className="text-zinc-500 text-sm">
-                  Em 45 dias seu sistema está no ar. Em 90 dias você já tem
-                  os primeiros clientes. Em 6 meses, um negócio funcionando.
+                  Em 45 dias seu app tá no ar. Em 90 dias você já tem
+                  os primeiros clientes pagando. Em 6 meses, um negócio de verdade.
                 </p>
               </div>
             </div>
 
             <p className="text-zinc-500 text-sm">
-              A melhor hora para começar era ontem. A segunda melhor é agora.
+              A melhor hora pra começar era ontem. A segunda melhor é agora.
             </p>
           </div>
         </motion.div>

@@ -6,42 +6,42 @@ import { Plus, Minus, ShieldCheck } from "lucide-react";
 
 const faqs = [
   {
-    category: "Sobre o investimento",
+    category: "Sobre o dinheiro",
     questions: [
       {
-        question: "Por que o preço é tão baixo comparado ao mercado?",
+        question: "Por que é tão mais barato que as empresas grandes?",
         answer:
-          "Porque já desenvolvi sistemas similares e domino a tecnologia. Uma software house cobra R$ 150k+ porque precisa pagar equipe, escritório, gerentes... Eu trabalho direto com você, sem intermediários. Isso reduz custos significativamente sem perder qualidade.",
+          "Porque eu já fiz apps assim antes. E eu trabalho sozinho, não tenho gerente, escritório, café... Empresa grande cobra caro porque tem muita gente pra pagar. Eu não. O preço é menor, mas a qualidade é a mesma.",
       },
       {
-        question: "Como funciona o processo de desenvolvimento?",
+        question: "Como funciona o pagamento?",
         answer:
-          "Assim que você fechar, começo a personalização imediata. Você recebe acesso a um grupo no WhatsApp para acompanhar o progresso. A cada etapa concluída, mostro o andamento. Em 30-45 dias, seu sistema está no ar.",
+          "PIX dá 5% de desconto. Cartão parcela em até 6x sem juros. E se precisar de uma condição diferente, é só me chamar que a gente vê.",
       },
       {
-        question: "Quais formas de pagamento você aceita?",
+        question: "Tem alguma mensalidade depois?",
         answer:
-          "PIX (com 5% de desconto), cartão de crédito em até 6x sem juros, ou boleto bancário. Se quiser negociar uma condição especial, é só me chamar que a gente conversa.",
+          "O app é seu, não cobra mensalidade. Só tem os custos normais: uns R$ 100 por mês pra manter no ar, e a conta das lojas. Coisa pequena. E eu já deixo tudo configurado pra você.",
       },
     ],
   },
   {
-    category: "Sobre o sistema",
+    category: "Sobre o app",
     questions: [
       {
-        question: "O código fonte é realmente meu para sempre?",
+        question: "O app é meu mesmo? Pra sempre?",
         answer:
-          "Sim, 100%. Você recebe todo o código fonte do sistema. Pode modificar, contratar outro dev para evoluir, vender, fazer o que quiser. É seu patrimônio digital. Não existe mensalidade ou licença.",
+          "Sim. Você é o dono. Pode mudar, pode vender, pode contratar outra pessoa pra mexer. É seu, tipo uma casa. Não é aluguel.",
       },
       {
-        question: "E se o app der bug depois da entrega?",
+        question: "E se der problema depois que você entregar?",
         answer:
-          "Você tem 60 dias de suporte técnico incluso para correção de bugs e ajustes. É tempo suficiente para estabilizar tudo. E como você recebe o código fonte, qualquer desenvolvedor Flutter pode dar manutenção depois se precisar.",
+          "Fico 60 dias no WhatsApp com você. Qualquer problema que aparecer, é só chamar que eu resolvo. É tempo de sobra pra tudo funcionar redondo.",
       },
       {
-        question: "Preciso pagar algo mensal para o sistema funcionar?",
+        question: "Funciona no Android e no iPhone?",
         answer:
-          "O sistema em si não tem mensalidade — é seu para sempre. Só tem os custos normais de qualquer app: hospedagem (menos de R$ 100/mês) e as contas nas lojas. Eu deixo tudo configurado e funcionando antes de entregar.",
+          "Funciona nos dois. E eu mesmo coloco nas lojas pra você. Não precisa fazer nada.",
       },
     ],
   },
@@ -51,37 +51,37 @@ const faqs = [
       {
         question: "Como consigo meus primeiros clientes?",
         answer:
-          "Incluo um guia de aquisição de clientes testado. As estratégias que mais funcionam: parceria com borracharias (eles indicam, você paga comissão), anúncios no Facebook/Instagram segmentados por região, e panfletagem em postos de gasolina. Clientes que seguiram o guia conseguiram os primeiros 50 assinantes em 30 dias.",
+          "Te dou um guia que mostra o caminho. O que mais funciona: fazer parceria com borracharias da região (eles indicam, você paga uma comissão), e fazer uns anúncios no Instagram. Gente que seguiu esse caminho conseguiu 50 clientes em 30 dias.",
       },
       {
-        question: "Preciso ter CNPJ para começar?",
+        question: "Preciso ter empresa aberta?",
         answer:
-          "Não precisa para começar. Pode operar como MEI (faturamento até R$ 81k/ano) ou pessoa física inicialmente. Quando crescer, te ajudo a entender qual estrutura faz mais sentido. O sistema funciona independente da sua situação fiscal.",
+          "Não. Pode começar como pessoa física ou MEI. Quando crescer, você vê certinho como quer fazer. O app funciona do mesmo jeito.",
       },
       {
-        question: "E se já existir concorrência na minha cidade?",
+        question: "E se já tiver alguém fazendo isso na minha cidade?",
         answer:
-          "Concorrência valida o mercado - significa que tem demanda. Seu diferencial será: atendimento local, preço competitivo, e um app moderno (a maioria usa sistemas antigos). Clientes que entraram em mercados com concorrência conseguiram faturar igual ou mais que os estabelecidos.",
+          "Aí é bom sinal. Se tem gente fazendo, é porque dá dinheiro. E a maioria usa sistemas velhos, feios. Seu app vai ser moderno, bonito. É um diferencial grande.",
       },
     ],
   },
   {
-    category: "Sobre o processo",
+    category: "Sobre como funciona",
     questions: [
       {
-        question: "Quanto tempo até eu poder começar a vender?",
+        question: "Quanto tempo até eu poder vender?",
         answer:
-          "O desenvolvimento leva 30-45 dias. Após a entrega, você precisa de mais 7-10 dias para aprovação nas lojas (Google Play e App Store). Ou seja, em aproximadamente 45-55 dias você está operando. Eu cuido de toda a publicação.",
+          "45 dias eu entrego tudo pronto. Mais uns 10 dias pras lojas aprovarem. Ou seja, em uns 55 dias você tá operando.",
       },
       {
-        question: "Preciso saber programar ou entender de tecnologia?",
+        question: "Preciso entender de computador?",
         answer:
-          "Não. Entrego tudo funcionando e pronto. Você recebe um treinamento em vídeo de como usar o painel admin, cadastrar prestadores, configurar preços, etc. Se tiver dúvidas depois, é só me chamar no WhatsApp durante o período de suporte.",
+          "Não. Te entrego tudo funcionando. E te mando uns vídeos ensinando a mexer. Se não entender, é só me chamar que eu explico.",
       },
       {
-        question: "O que acontece depois dos 60 dias de suporte?",
+        question: "E depois dos 60 dias de ajuda?",
         answer:
-          "O sistema é estável e não precisa de manutenção constante. A maioria dos meus clientes segue operando normalmente sozinho. Se precisar de algo no futuro, é só me chamar que a gente combina. O código é seu, você tem liberdade total.",
+          "O app é estável, não dá problema toda hora. A maioria dos meus clientes toca sozinho depois. Mas se precisar de algo, é só me chamar que a gente combina.",
       },
     ],
   },
@@ -144,13 +144,15 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            Tire suas dúvidas
+            Dúvidas
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Perguntas frequentes
+            Perguntas que
+            <br />
+            <span className="text-zinc-500">todo mundo faz</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            Se sua dúvida não estiver aqui, me chama no WhatsApp que respondo na hora.
+            Se sua dúvida não tiver aqui, me chama no WhatsApp que eu respondo na hora.
           </p>
         </motion.div>
 
@@ -203,12 +205,11 @@ export default function FAQ() {
               </div>
               <div>
                 <h4 className="text-xl font-bold text-green-400 mb-2">
-                  Compromisso de entrega
+                  Minha palavra
                 </h4>
                 <p className="text-zinc-400">
-                  Seu sistema funcionando em 45 dias, com 60 dias de suporte técnico
-                  dedicado. Comunicação direta comigo pelo WhatsApp durante todo o processo.
-                  Você acompanha cada etapa do desenvolvimento.
+                  Seu app funcionando em 45 dias. 60 dias comigo no WhatsApp pra qualquer
+                  problema. Você me manda mensagem, eu respondo. Simples assim.
                 </p>
               </div>
             </div>

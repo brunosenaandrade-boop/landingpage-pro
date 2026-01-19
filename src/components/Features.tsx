@@ -15,43 +15,43 @@ import {
 const features = [
   {
     icon: MapPin,
-    title: "GPS em tempo real",
-    description: "Cliente acompanha o prestador chegando. Experiência premium igual aos grandes apps.",
+    title: "Vê no mapa",
+    description: "Seu cliente vê o socorrista chegando no celular. Igual Uber, iFood, 99.",
   },
   {
     icon: CreditCard,
-    title: "Pagamentos integrados",
-    description: "PIX e cartão de crédito configurados. Receba automaticamente na sua conta.",
+    title: "Paga pelo app",
+    description: "PIX ou cartão. O dinheiro cai na sua conta. Você não precisa cobrar ninguém.",
   },
   {
     icon: Bell,
-    title: "Notificações push",
-    description: "Sistema automático de alertas para clientes e prestadores em tempo real.",
+    title: "Avisa na hora",
+    description: "Cliente pediu socorro? O socorrista recebe na hora no celular. Automático.",
   },
   {
     icon: Code2,
-    title: "Código fonte completo",
-    description: "Todo o código é seu. Modifique, escale e evolua como quiser.",
+    title: "O app é seu",
+    description: "Diferente de alugar um sistema, aqui você é dono. Faz o que quiser com ele.",
   },
   {
     icon: Users,
-    title: "Multi-plataforma",
-    description: "Apps nativos para Android e iOS. Publicação nas lojas inclusa.",
+    title: "Android e iPhone",
+    description: "Funciona nos dois. Eu coloco nas lojas pra você. Não precisa fazer nada.",
   },
   {
     icon: BarChart3,
-    title: "Dashboard administrativo",
-    description: "Controle total: clientes, prestadores, chamados, pagamentos e métricas.",
+    title: "Você vê tudo",
+    description: "Quantos clientes tem, quanto entrou de dinheiro, quem tá devendo. Tudo na tela.",
   },
   {
     icon: Lock,
-    title: "Segurança enterprise",
-    description: "Autenticação robusta, dados criptografados e boas práticas de segurança.",
+    title: "Seguro de verdade",
+    description: "Os dados dos seus clientes ficam protegidos. Ninguém acessa o que não deve.",
   },
   {
     icon: Headphones,
-    title: "Suporte dedicado",
-    description: "60 dias de suporte técnico para você começar com confiança.",
+    title: "Eu te ajudo",
+    description: "60 dias comigo no WhatsApp. Qualquer dúvida, qualquer problema, é só chamar.",
   },
 ];
 
@@ -70,16 +70,16 @@ export default function Features() {
           className="text-center mb-20"
         >
           <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-            Funcionalidades
+            O que o app faz
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
             Tudo que você precisa
             <br />
-            <span className="text-zinc-500">em um único sistema</span>
+            <span className="text-zinc-500">num lugar só</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Desenvolvo um sistema completo com tecnologia de ponta,
-            pronto para você operar seu negócio de assistência veicular.
+            Eu faço tudo e te entrego funcionando.
+            Você só precisa cuidar dos seus clientes.
           </p>
         </motion.div>
 

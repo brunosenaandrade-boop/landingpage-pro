@@ -7,23 +7,23 @@ import { Linkedin, Github, Award, Briefcase, GraduationCap, Rocket, Headphones }
 const credentials = [
   {
     icon: Briefcase,
-    title: "12+ projetos entregues",
-    description: "Apps e sistemas em produção",
+    title: "12 projetos entregues",
+    description: "Gente que confiou e recebeu",
   },
   {
     icon: Rocket,
-    title: "8 anos de experiência",
-    description: "Desenvolvimento mobile e web",
+    title: "8 anos fazendo isso",
+    description: "Sei o que funciona e o que não",
   },
   {
     icon: Award,
-    title: "Especialista Flutter",
-    description: "Apps nativos iOS e Android",
+    title: "Faço app de verdade",
+    description: "Pro Android e pro iPhone",
   },
   {
     icon: Headphones,
-    title: "Suporte direto",
-    description: "Comunicação sem intermediários",
+    title: "Falo direto com você",
+    description: "Sem gerente no meio",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function About() {
                 <div className="aspect-square relative">
                   <Image
                     src="/bruno.png"
-                    alt="Bruno Sena - Desenvolvedor Full Stack"
+                    alt="Bruno Sena"
                     fill
                     className="object-cover"
                     priority
@@ -61,7 +61,7 @@ export default function About() {
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-xl font-bold">Bruno Sena</h3>
-                      <p className="text-zinc-400 text-sm">Desenvolvedor Full Stack</p>
+                      <p className="text-zinc-400 text-sm">Faço apps e sistemas</p>
                     </div>
                     <div className="flex gap-3">
                       <a
@@ -86,28 +86,27 @@ export default function About() {
             {/* Content side */}
             <div>
               <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-                Por trás do código
+                Quem vai fazer seu app
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-                Sem intermediário.
+                Você fala comigo.
                 <br />
-                <span className="text-zinc-500">Direto com quem faz.</span>
+                <span className="text-zinc-500">Não com um gerente.</span>
               </h2>
 
               <div className="space-y-4 text-zinc-400 mb-8">
                 <p>
-                  Quando você contrata uma software house, seu projeto vira um ticket.
-                  Passa por gerente, coordenador, dev júnior, e você nunca fala com
-                  quem realmente escreve o código.
+                  Empresa grande é assim: você pede uma coisa, passa por 5 pessoas,
+                  e no final ninguém sabe o que você queria. E ainda cobra caro.
                 </p>
                 <p>
-                  Aqui é diferente. Eu sou o Bruno. Sou quem vai desenvolver seu sistema,
-                  responder suas dúvidas no WhatsApp, e garantir que funcione.
-                  Sem camadas. Sem burocracia.
+                  Comigo é diferente. Eu sou o Bruno. Eu que vou fazer seu app,
+                  eu que vou responder suas mensagens no WhatsApp, eu que vou
+                  resolver se der qualquer problema. Direto, sem enrolação.
                 </p>
                 <p className="text-white font-medium">
-                  Comunicação rápida, decisões ágeis, custo menor, e comprometimento real
-                  — porque meu nome está em jogo.
+                  Meu nome tá em jogo. Se eu não entregar, quem fica mal sou eu.
+                  Por isso eu entrego.
                 </p>
               </div>
 
@@ -140,9 +139,9 @@ export default function About() {
                   <Award className="w-6 h-6 text-green-500" />
                 </div>
                 <div>
-                  <h4 className="font-bold">Compromisso de entrega</h4>
+                  <h4 className="font-bold">Minha palavra</h4>
                   <p className="text-zinc-400 text-sm">
-                    Sistema funcionando em 45 dias + 60 dias de suporte dedicado comigo.
+                    Seu app funcionando em 45 dias. E 60 dias comigo no WhatsApp pra qualquer coisa.
                   </p>
                 </div>
               </div>
