@@ -16,12 +16,12 @@ const faqs = [
       {
         question: "Como funciona o processo de desenvolvimento?",
         answer:
-          "Após fecharmos, começamos a personalização imediata. Você recebe acesso a um grupo no WhatsApp para acompanhar o progresso. A cada etapa concluída, mostro o andamento. Em 30-45 dias, seu sistema está no ar.",
+          "Assim que você fechar, começo a personalização imediata. Você recebe acesso a um grupo no WhatsApp para acompanhar o progresso. A cada etapa concluída, mostro o andamento. Em 30-45 dias, seu sistema está no ar.",
       },
       {
-        question: "Quais formas de pagamento vocês aceitam?",
+        question: "Quais formas de pagamento você aceita?",
         answer:
-          "PIX (5% de desconto), cartão de crédito em até 6x sem juros, ou boleto bancário. Também negociamos condições especiais para pagamento à vista. Entre em contato para combinarmos.",
+          "PIX (com 5% de desconto), cartão de crédito em até 6x sem juros, ou boleto bancário. Se quiser negociar uma condição especial, é só me chamar que a gente conversa.",
       },
     ],
   },
@@ -36,12 +36,12 @@ const faqs = [
       {
         question: "E se o app der bug depois da entrega?",
         answer:
-          "Você tem 60 dias de suporte técnico incluso para correção de bugs. Após esse período, posso continuar te atendendo por um valor de manutenção mensal opcional (R$ 500/mês) ou você pode contratar qualquer outro desenvolvedor Flutter.",
+          "Você tem 60 dias de suporte técnico incluso para correção de bugs e ajustes. É tempo suficiente para estabilizar tudo. E como você recebe o código fonte, qualquer desenvolvedor Flutter pode dar manutenção depois se precisar.",
       },
       {
         question: "Preciso pagar algo mensal para o sistema funcionar?",
         answer:
-          "O sistema em si não tem mensalidade. Os únicos custos recorrentes são: servidor (cerca de R$ 50-100/mês), conta de desenvolvedor na Play Store (R$ 25 única vez) e App Store (R$ 99/ano). Eu te ajudo a configurar tudo.",
+          "O sistema em si não tem mensalidade — é seu para sempre. Só tem os custos normais de qualquer app: hospedagem (menos de R$ 100/mês) e as contas nas lojas. Eu deixo tudo configurado e funcionando antes de entregar.",
       },
     ],
   },
@@ -81,7 +81,7 @@ const faqs = [
       {
         question: "O que acontece depois dos 60 dias de suporte?",
         answer:
-          "Você pode: (1) continuar sozinho - o sistema é estável e não precisa de manutenção constante, (2) contratar manutenção mensal comigo por R$ 500/mês, ou (3) contratar qualquer dev Flutter do mercado. O código é seu, você tem liberdade total.",
+          "O sistema é estável e não precisa de manutenção constante. A maioria dos meus clientes segue operando normalmente sozinho. Se precisar de algo no futuro, é só me chamar que a gente combina. O código é seu, você tem liberdade total.",
       },
     ],
   },

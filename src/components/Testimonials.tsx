@@ -149,23 +149,16 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* Note */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-zinc-400 mb-6">
-            Quer ver mais projetos ou conversar sobre o seu?
+          <p className="text-zinc-500 text-sm">
+            Projetos reais entregues. Clientes reais satisfeitos.
           </p>
-          <a
-            href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais"
-            target="_blank"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm font-medium"
-          >
-            Falar com Bruno
-          </a>
         </motion.div>
       </div>
     </section>

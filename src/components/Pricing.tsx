@@ -30,20 +30,20 @@ const bonuses = [
   {
     icon: Gift,
     title: "Guia de Aquisição de Clientes",
-    value: "R$ 497",
-    description: "Estratégias testadas para conseguir seus primeiros 50 clientes",
+    value: "R$ 1.997",
+    description: "O mesmo método que uso para meus clientes conseguirem os primeiros 50 assinantes",
   },
   {
     icon: Zap,
-    title: "Configuração de Servidor",
-    value: "R$ 300",
-    description: "Configuro toda a infraestrutura para você",
+    title: "Configuração Completa de Infraestrutura",
+    value: "R$ 2.500",
+    description: "Servidor, domínio, SSL, banco de dados — tudo configurado e funcionando",
   },
   {
     icon: ShieldCheck,
-    title: "Suporte estendido (60 dias)",
-    value: "R$ 600",
-    description: "Tire dúvidas e corrija bugs sem custo adicional",
+    title: "Suporte Direto por 60 dias",
+    value: "R$ 3.000",
+    description: "Acesso direto a mim pelo WhatsApp para qualquer dúvida ou ajuste",
   },
 ];
 
@@ -87,13 +87,6 @@ export default function Pricing() {
           className="max-w-4xl mx-auto"
         >
           <div className="rounded-3xl bg-zinc-900 border border-zinc-800 overflow-hidden relative">
-            {/* Popular badge */}
-            <div className="absolute top-6 right-6">
-              <span className="px-4 py-1.5 bg-amber-500 text-black text-xs font-bold rounded-full">
-                MAIS ESCOLHIDO
-              </span>
-            </div>
-
             {/* Header */}
             <div className="p-8 md:p-12 bg-gradient-to-br from-zinc-900 to-zinc-950 border-b border-zinc-800">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">

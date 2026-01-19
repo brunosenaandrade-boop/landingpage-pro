@@ -69,11 +69,11 @@ const solution = [
   },
   {
     problem: "E se der problema depois?",
-    solution: "60 dias de suporte + código fonte é seu para sempre",
+    solution: "60 dias de suporte direto comigo pelo WhatsApp",
   },
   {
-    problem: "E se não der certo?",
-    solution: "Garantia de 30 dias ou seu dinheiro de volta",
+    problem: "Vou ficar dependente de alguém?",
+    solution: "Código fonte 100% seu, faça o que quiser com ele",
   },
 ];
 
@@ -195,7 +195,7 @@ export default function Challenges() {
             <div className="p-8 md:p-10 bg-zinc-800/30 border-t border-zinc-800">
               <div className="text-center">
                 <p className="text-zinc-400">
-                  Com o Seguro Pneu Pro, eu cuido da tecnologia e você foca no negócio.
+                  Eu cuido da tecnologia. Você foca no que importa: construir seu negócio.
                 </p>
               </div>
             </div>

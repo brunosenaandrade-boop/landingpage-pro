@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Users, Clock, Calculator, TrendingUp, Sparkles } from "lucide-react";
+import { ArrowRight, Users, Clock, TrendingUp, Sparkles, Target } from "lucide-react";
 
 export default function Hero() {
-  const [clients, setClients] = useState(100);
+  const [clients, setClients] = useState(150);
   const monthlyPrice = 29.9;
   const revenue = clients * monthlyPrice;
-  const investment = 16500;
-  const monthsToROI = Math.ceil(investment / revenue);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-20">
@@ -110,11 +108,11 @@ export default function Hero() {
               <div className="p-6 border-b border-zinc-800 bg-gradient-to-r from-zinc-900 to-zinc-950">
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center">
-                    <Calculator className="w-5 h-5 text-amber-500" />
+                    <Target className="w-5 h-5 text-amber-500" />
                   </div>
                   <div className="text-left">
-                    <h3 className="font-bold text-lg">Simulador de Retorno</h3>
-                    <p className="text-sm text-zinc-500">Veja quanto você pode faturar</p>
+                    <h3 className="font-bold text-lg">Simule seu faturamento</h3>
+                    <p className="text-sm text-zinc-500">Arraste e veja o potencial do negócio</p>
                   </div>
                 </div>
               </div>
@@ -143,33 +141,30 @@ export default function Hero() {
                 </div>
 
                 {/* Results */}
-                <div className="grid md:grid-cols-4 gap-4">
-                  <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
-                    <div className="text-sm text-zinc-500 mb-1">Mensalidade</div>
-                    <div className="text-xl font-bold">R$ {monthlyPrice.toFixed(2)}</div>
-                    <div className="text-xs text-zinc-600">por cliente</div>
-                  </div>
+                <div className="grid md:grid-cols-3 gap-4">
                   <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
                     <div className="text-sm text-zinc-500 mb-1">Receita mensal</div>
-                    <div className="text-xl font-bold gradient-text">
+                    <div className="text-2xl font-bold gradient-text">
                       R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                     </div>
-                    <div className="text-xs text-zinc-600">recorrente</div>
+                    <div className="text-xs text-zinc-600">recorrente, todo mês</div>
                   </div>
                   <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
                     <div className="text-sm text-zinc-500 mb-1">Receita anual</div>
-                    <div className="text-xl font-bold text-green-500">
+                    <div className="text-2xl font-bold text-green-500">
                       R$ {(revenue * 12).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                     </div>
-                    <div className="text-xs text-zinc-600">projeção</div>
+                    <div className="text-xs text-zinc-600">projeção 12 meses</div>
                   </div>
                   <div className="p-5 rounded-2xl bg-green-900/20 border border-green-800/30 text-center">
-                    <div className="text-sm text-zinc-500 mb-1">Retorno em</div>
+                    <div className="text-sm text-zinc-500 mb-1">Em 2 anos</div>
                     <div className="flex items-center justify-center gap-1">
                       <TrendingUp className="w-5 h-5 text-green-500" />
-                      <span className="text-xl font-bold text-green-500">{monthsToROI} {monthsToROI === 1 ? 'mês' : 'meses'}</span>
+                      <span className="text-2xl font-bold text-green-500">
+                        R$ {(revenue * 24).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}
+                      </span>
                     </div>
-                    <div className="text-xs text-zinc-600">para recuperar</div>
+                    <div className="text-xs text-zinc-600">potencial acumulado</div>
                   </div>
                 </div>
 
@@ -178,22 +173,22 @@ export default function Hero() {
                   <p className="text-sm text-amber-200 text-center">
                     {clients >= 200 ? (
                       <>
-                        <span className="font-semibold">Excelente!</span> Com {clients} clientes você fatura{' '}
-                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>{' '}
-                        e recupera o investimento em apenas <span className="font-bold">{monthsToROI} {monthsToROI === 1 ? 'mês' : 'meses'}</span>.
+                        <span className="font-semibold">Números impressionantes!</span> Com {clients} clientes você constrói uma receita de{' '}
+                        <span className="font-bold">R$ {(revenue * 12).toLocaleString('pt-BR', { minimumFractionDigits: 0 })}/ano</span>.{' '}
+                        Isso é um negócio sólido.
                       </>
                     ) : clients >= 100 ? (
                       <>
-                        <span className="font-semibold">Meta conservadora.</span> Com apenas {clients} clientes{' '}
-                        (menos de 1% do mercado da sua cidade) você já fatura{' '}
-                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>.
+                        <span className="font-semibold">Meta alcançável.</span> {clients} clientes representa{' '}
+                        menos de 1% do mercado da sua cidade. Com{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>{' '}
+                        você já tem um negócio funcionando.
                       </>
                     ) : (
                       <>
-                        <span className="font-semibold">Começando pequeno.</span> Mesmo com apenas {clients} clientes{' '}
-                        você já tem uma receita de{' '}
-                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>{' '}
-                        para reinvestir no crescimento.
+                        <span className="font-semibold">Só o começo.</span> Com {clients} clientes você já fatura{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>.{' '}
+                        Imagine quando chegar em 200, 300...
                       </>
                     )}
                   </p>
