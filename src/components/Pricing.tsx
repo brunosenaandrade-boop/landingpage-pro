@@ -103,7 +103,7 @@ export default function Pricing() {
                 <div>
                   <div className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Freelancer</div>
                   <div className="text-2xl font-bold text-red-400 line-through">R$ 40.000</div>
-                  <div className="text-xs text-zinc-600">+ risco de sumir</div>
+                  <div className="text-xs text-zinc-600">+ qualidade duvidosa</div>
                 </div>
                 <div className="text-zinc-700 text-2xl">→</div>
                 <div>
@@ -227,15 +227,15 @@ export default function Pricing() {
                 <div className="grid md:grid-cols-3 gap-4 text-sm">
                   <div className="text-center">
                     <div className="text-zinc-300 font-medium">Me conhece há 7 anos</div>
-                    <div className="text-zinc-500 text-xs">Você sabe onde me achar</div>
+                    <div className="text-zinc-500 text-xs">Amigos em comum, história juntos</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-zinc-300 font-medium">60 dias de suporte</div>
-                    <div className="text-zinc-500 text-xs">Qualquer problema, eu resolvo</div>
+                    <div className="text-zinc-300 font-medium">Update toda semana</div>
+                    <div className="text-zinc-500 text-xs">Você acompanha cada passo no WhatsApp</div>
                   </div>
                   <div className="text-center">
                     <div className="text-zinc-300 font-medium">O app é seu pra sempre</div>
-                    <div className="text-zinc-500 text-xs">Não depende de mim depois</div>
+                    <div className="text-zinc-500 text-xs">Código na sua mão, você é o dono</div>
                   </div>
                 </div>
               </div>
@@ -316,7 +316,7 @@ export default function Pricing() {
               <p className="text-zinc-300 text-sm">
                 A gente se conhece há 7 anos, Agilson.
                 <br />
-                <span className="text-zinc-500">Você sabe que eu não vou te deixar na mão.</span>
+                <span className="text-zinc-500">Você sabe que eu cumpro o que prometo.</span>
               </p>
             </div>
           </div>

@@ -28,11 +28,11 @@ const challenges = [
     title: "Freelancer da internet",
     problems: [
       "Você não sabe quem é de verdade",
-      "Recebe o adiantamento e some",
-      "Entrega meia-boca e desaparece",
-      "Você fica sem app e sem dinheiro",
+      "Não conhece a família, os amigos",
+      "Entrega coisa genérica, sem cuidado",
+      "Se der erro, você não tem a quem recorrer",
     ],
-    verdict: "Já ouviu essa história, né?",
+    verdict: "É apostar no escuro",
   },
   {
     icon: DollarSign,
@@ -69,11 +69,11 @@ const solution = [
   },
   {
     problem: "E se der problema depois?",
-    solution: "60 dias comigo no WhatsApp. Você sabe onde me achar",
+    solution: "60 dias no WhatsApp comigo. Respondo no mesmo dia",
   },
   {
     problem: "Vou depender de alguém pra sempre?",
-    solution: "O app é seu. Não precisa de mim depois se não quiser",
+    solution: "O app é seu. Você decide se quer minha ajuda ou não",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function Challenges() {
         >
           <div className="p-6 rounded-2xl bg-zinc-900/80 border border-zinc-800">
             <p className="text-lg text-zinc-300 text-center">
-              Quantas vezes você já pagou adiantado e o cara sumiu?
+              Quantas vezes você já pagou caro e recebeu coisa mal feita?
               <br />
               <span className="text-zinc-500 text-base">É a história de todo empresário brasileiro.</span>
             </p>

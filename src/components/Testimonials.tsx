@@ -12,7 +12,7 @@ const testimonials = [
     business: "Dono de restaurante",
     project: "App de delivery",
     quote:
-      "Eu tinha medo de gastar dinheiro com coisa que não ia funcionar. Já tinha perdido grana com promessa de gente que sumiu. O Bruno foi diferente. Entregou certinho, me explicou tudo. Hoje meu delivery roda no app próprio, não pago mais taxa pro iFood.",
+      "Eu tinha medo de gastar dinheiro com coisa que não ia funcionar. Já tinha pagado caro por coisa mal feita antes. O Bruno foi diferente. Entregou certinho, me explicou tudo. Hoje meu delivery roda no app próprio, não pago mais taxa pro iFood.",
     highlight: "Não paga mais taxa pro iFood",
     icon: Utensils,
   },
@@ -84,7 +84,7 @@ const testimonials = [
     business: "Loja de roupas",
     project: "App de vendas",
     quote:
-      "Freelancer já tinha me deixado na mão duas vezes. Perdi tempo e dinheiro. Com o Bruno foi diferente. Ele mostrava o progresso toda semana no WhatsApp. Em nenhum momento fiquei no escuro.",
+      "Já tinha contratado gente que entregou coisa mal feita. Perdi tempo e dinheiro. Com o Bruno foi diferente. Ele mostrava o progresso toda semana no WhatsApp. Em nenhum momento fiquei no escuro.",
     highlight: "Acompanhou tudo pelo WhatsApp",
     icon: ShoppingBag,
   },
@@ -234,11 +234,11 @@ export default function Testimonials() {
         >
           <div className="p-8 rounded-2xl bg-zinc-900/80 border border-zinc-800 text-center">
             <p className="text-xl text-zinc-300 mb-4">
-              Você também já perdeu dinheiro com promessa de gente que sumiu?
+              Você também já pagou caro por trabalho mal feito?
             </p>
             <p className="text-zinc-500">
               A maioria desses empresários passou pela mesma coisa antes de me conhecer.
-              Por isso eles valorizam tanto alguém que cumpre o que promete.
+              Por isso eles valorizam tanto alguém que entrega o que promete.
             </p>
           </div>
         </motion.div>
