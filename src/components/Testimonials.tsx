@@ -251,7 +251,7 @@ export default function Testimonials() {
           className="text-center mt-10"
         >
           <p className="text-zinc-500 text-sm">
-            Quer conversar com algum deles antes de fechar? É só me pedir.
+            Todos empresários do Nordeste. Gente que entende o que é tocar um negócio.
           </p>
         </motion.div>
       </div>
