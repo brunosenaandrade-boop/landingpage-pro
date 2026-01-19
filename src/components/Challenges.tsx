@@ -61,7 +61,7 @@ const challenges = [
 const solution = [
   {
     problem: "Preciso de R$ 150 mil pra começar",
-    solution: "R$ 16.500 e em 45 dias você tá faturando",
+    solution: "Uma fração disso. E em 45 dias você tá faturando",
   },
   {
     problem: "Não conheço ninguém de confiança",
