@@ -86,26 +86,28 @@ export default function About() {
             {/* Content side */}
             <div>
               <span className="text-red-500 font-medium text-sm uppercase tracking-wider">
-                Quem vai desenvolver seu sistema
+                Por trás do código
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-                Não é uma empresa.
+                Sem intermediário.
                 <br />
-                <span className="text-zinc-500">É um desenvolvedor dedicado.</span>
+                <span className="text-zinc-500">Direto com quem faz.</span>
               </h2>
 
               <div className="space-y-4 text-zinc-400 mb-8">
                 <p>
-                  Meu nome é Bruno e desenvolvo sistemas há mais de 8 anos.
-                  Já entreguei dezenas de projetos para empresas de todos os tamanhos.
+                  Quando você contrata uma software house, seu projeto vira um ticket.
+                  Passa por gerente, coordenador, dev júnior, e você nunca fala com
+                  quem realmente escreve o código.
                 </p>
                 <p>
-                  O Seguro Pneu Pro nasceu de um projeto real que desenvolvi para um cliente.
-                  Funcionou tão bem que decidi oferecer o mesmo sistema para outros empreendedores.
+                  Aqui é diferente. Eu sou o Bruno. Sou quem vai desenvolver seu sistema,
+                  responder suas dúvidas no WhatsApp, e garantir que funcione.
+                  Sem camadas. Sem burocracia.
                 </p>
                 <p className="text-white font-medium">
-                  Você não está comprando um template genérico. Está contratando
-                  um desenvolvedor experiente que vai personalizar tudo para você.
+                  Comunicação rápida, decisões ágeis, custo menor, e comprometimento real
+                  — porque meu nome está em jogo.
                 </p>
               </div>
 
