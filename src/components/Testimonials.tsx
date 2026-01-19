@@ -1,51 +1,48 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote, TrendingUp, MapPin } from "lucide-react";
+import { Star, Quote, Smartphone, ShoppingCart, Truck, MapPin, CheckCircle } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Ricardo Oliveira",
-    location: "São Paulo, SP",
-    image: null,
-    initials: "RO",
-    role: "Empresário",
-    revenue: "R$ 8.200/mês",
-    clients: "280 assinantes",
+    name: "Carlos Mendes",
+    location: "Joinville, SC",
+    initials: "CM",
+    role: "Dono de distribuidora",
+    project: "App de delivery B2B",
     quote:
-      "Recuperei o investimento em 2 meses. Hoje tenho 280 clientes ativos e o sistema roda praticamente sozinho. Melhor decisão que tomei.",
-    highlight: "Recuperou em 2 meses",
+      "Precisava de um sistema para meus vendedores fazerem pedidos em campo. O Bruno entendeu exatamente o que eu precisava e entregou antes do prazo. Hoje minha equipe não vive sem o app.",
+    highlight: "Entregue antes do prazo",
+    icon: ShoppingCart,
   },
   {
-    name: "Marcos Silva",
+    name: "Patricia Santos",
+    location: "Florianópolis, SC",
+    initials: "PS",
+    role: "Empresária",
+    project: "Sistema de agendamentos",
+    quote:
+      "Minha clínica precisava de um sistema de agendamento que funcionasse bem. O Bruno fez tudo personalizado, com lembretes automáticos. Reduzi faltas em 40%. Profissional demais.",
+    highlight: "Reduziu faltas em 40%",
+    icon: Smartphone,
+  },
+  {
+    name: "Roberto Lima",
     location: "Curitiba, PR",
-    image: null,
-    initials: "MS",
-    role: "Ex-caminhoneiro",
-    revenue: "R$ 4.800/mês",
-    clients: "160 assinantes",
+    initials: "RL",
+    role: "Gestor de frota",
+    project: "App de rastreamento",
     quote:
-      "Saí da estrada e montei meu próprio negócio. O Bruno entregou tudo funcionando e me ensinou a operar. Hoje faturo mais do que quando dirigia.",
-    highlight: "Mudou de carreira",
-  },
-  {
-    name: "Fernanda Costa",
-    location: "Belo Horizonte, MG",
-    image: null,
-    initials: "FC",
-    role: "Empreendedora",
-    revenue: "R$ 12.500/mês",
-    clients: "420 assinantes",
-    quote:
-      "Comecei com medo, mas o suporte do Bruno me deu confiança. Em 6 meses já tinha o maior serviço de assistência de pneus da minha região.",
-    highlight: "420 clientes em 6 meses",
+      "Terceirizamos a frota e precisávamos de controle. O app que o Bruno desenvolveu me dá visão total dos veículos. Integrou com nosso ERP sem dor de cabeça. Excelente trabalho.",
+    highlight: "Integração com ERP",
+    icon: Truck,
   },
 ];
 
 const stats = [
-  { value: "12+", label: "Sistemas entregues" },
-  { value: "3.200+", label: "Usuários ativos" },
-  { value: "R$ 180k+", label: "Faturamento dos clientes/mês" },
+  { value: "12+", label: "Projetos entregues" },
+  { value: "100%", label: "Taxa de entrega" },
+  { value: "8", label: "Anos de experiência" },
   { value: "4.9", label: "Avaliação média", icon: Star },
 ];
 
@@ -64,16 +61,16 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <span className="text-green-500 font-medium text-sm uppercase tracking-wider">
-            Resultados reais
+            Portfólio
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Quem já está
+            Projetos que já entreguei
             <br />
-            <span className="text-zinc-500">faturando com o sistema</span>
+            <span className="text-zinc-500">e clientes satisfeitos</span>
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Não acredite só em mim. Veja o que dizem os empreendedores que já
-            estão operando com o Seguro Pneu Pro.
+            Cada projeto é único, mas meu compromisso é sempre o mesmo:
+            entregar funcionando, no prazo, com qualidade.
           </p>
         </motion.div>
 
@@ -110,11 +107,11 @@ export default function Testimonials() {
               className="relative"
             >
               <div className="h-full rounded-2xl bg-zinc-900 border border-zinc-800 p-8 hover:border-zinc-700 transition-colors">
-                {/* Highlight badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 mb-6">
-                  <TrendingUp className="w-3 h-3 text-green-500" />
-                  <span className="text-xs text-green-400 font-medium">
-                    {testimonial.highlight}
+                {/* Project type badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 mb-6">
+                  <testimonial.icon className="w-3 h-3 text-blue-500" />
+                  <span className="text-xs text-blue-400 font-medium">
+                    {testimonial.project}
                   </span>
                 </div>
 
@@ -126,21 +123,12 @@ export default function Testimonials() {
                   </p>
                 </div>
 
-                {/* Revenue stats */}
-                <div className="flex gap-4 mb-6 p-4 rounded-xl bg-zinc-800/50">
-                  <div>
-                    <div className="text-lg font-bold text-green-500">
-                      {testimonial.revenue}
-                    </div>
-                    <div className="text-xs text-zinc-500">Faturamento</div>
-                  </div>
-                  <div className="w-px bg-zinc-700" />
-                  <div>
-                    <div className="text-lg font-bold text-white">
-                      {testimonial.clients}
-                    </div>
-                    <div className="text-xs text-zinc-500">Clientes</div>
-                  </div>
+                {/* Highlight */}
+                <div className="flex items-center gap-2 mb-6 p-3 rounded-xl bg-green-900/20 border border-green-800/30">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span className="text-sm text-green-400 font-medium">
+                    {testimonial.highlight}
+                  </span>
                 </div>
 
                 {/* Author */}
@@ -161,16 +149,23 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Note */}
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-zinc-500 text-sm">
-            Esses são resultados reais de empreendedores que começaram do zero.
+          <p className="text-zinc-400 mb-6">
+            Quer ver mais projetos ou conversar sobre o seu?
           </p>
+          <a
+            href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais"
+            target="_blank"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm font-medium"
+          >
+            Falar com Bruno
+          </a>
         </motion.div>
       </div>
     </section>

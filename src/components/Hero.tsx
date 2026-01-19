@@ -1,9 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, Clock, Users, FileText } from "lucide-react";
+import { ArrowRight, Users, Clock, Calculator, TrendingUp, Sparkles } from "lucide-react";
 
 export default function Hero() {
+  const [clients, setClients] = useState(100);
+  const monthlyPrice = 29.9;
+  const revenue = clients * monthlyPrice;
+  const investment = 16500;
+  const monthsToROI = Math.ceil(investment / revenue);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-20">
       {/* Background gradient orbs */}
@@ -15,16 +22,16 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
+          {/* Badge personalizado */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 mb-8"
           >
-            <FileText className="w-4 h-4 text-green-500" />
-            <span className="text-sm text-green-400 font-medium">
-              Proposta personalizada
+            <Sparkles className="w-4 h-4 text-amber-500" />
+            <span className="text-sm text-amber-400 font-medium">
+              Proposta exclusiva para Agilson
             </span>
           </motion.div>
 
@@ -35,9 +42,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
           >
-            Lance seu negócio de
+            Sua ideia pronta para
             <br />
-            <span className="gradient-text">assistência veicular</span>
+            <span className="gradient-text">faturar em 45 dias</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -47,9 +54,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-zinc-400 max-w-2xl mx-auto mb-4"
           >
-            Sistema completo com 3 apps profissionais + painel admin.
+            Sistema completo de assistência veicular com 3 apps + painel admin.
             <br />
-            <span className="text-white font-medium">Fature R$ 5.000+/mês</span> com assinaturas recorrentes.
+            <span className="text-white font-medium">Código 100% seu, sem mensalidade, sem dependência.</span>
           </motion.p>
 
           {/* Social proof mini */}
@@ -61,7 +68,7 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Users className="w-4 h-4 text-green-500" />
-              <span><span className="text-white font-medium">12+</span> sistemas entregues</span>
+              <span><span className="text-white font-medium">12+</span> projetos entregues</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Clock className="w-4 h-4 text-blue-500" />
@@ -74,59 +81,128 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
             <a
               href="#pricing"
               className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow"
             >
-              Ver proposta completa
+              Ver investimento completo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#video"
+              href="#apps"
               className="flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-800/50 transition-all duration-300"
             >
-              <Play className="w-5 h-5" />
-              Ver sistema funcionando
+              Ver o sistema
             </a>
           </motion.div>
 
-          {/* Video Section */}
+          {/* ROI Calculator */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            id="video"
             className="relative max-w-4xl mx-auto"
           >
-            {/* Video container with glow effect */}
-            <div className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/50 aspect-video group cursor-pointer">
-              {/* Placeholder gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900" />
-
-              {/* Play button overlay */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 rounded-full bg-red-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-red-500/30">
-                  <Play className="w-8 h-8 text-white ml-1" fill="white" />
+            <div className="rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900/80 backdrop-blur-sm">
+              {/* Calculator header */}
+              <div className="p-6 border-b border-zinc-800 bg-gradient-to-r from-zinc-900 to-zinc-950">
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center">
+                    <Calculator className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <div className="text-left">
+                    <h3 className="font-bold text-lg">Simulador de Retorno</h3>
+                    <p className="text-sm text-zinc-500">Veja quanto você pode faturar</p>
+                  </div>
                 </div>
               </div>
 
-              {/* Video text */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-zinc-400 text-sm">
-                  Veja o sistema completo em ação: App Cliente, App Prestador e Painel Admin
-                </p>
-              </div>
+              {/* Calculator body */}
+              <div className="p-8">
+                {/* Slider */}
+                <div className="mb-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <label className="text-sm text-zinc-400">Quantos clientes você pretende ter?</label>
+                    <span className="text-2xl font-bold text-white">{clients}</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="50"
+                    max="500"
+                    step="10"
+                    value={clients}
+                    onChange={(e) => setClients(Number(e.target.value))}
+                    className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-red-500"
+                  />
+                  <div className="flex justify-between text-xs text-zinc-600 mt-2">
+                    <span>50 clientes</span>
+                    <span>500 clientes</span>
+                  </div>
+                </div>
 
-              {/* Glow effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-red-500/20 to-amber-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+                {/* Results */}
+                <div className="grid md:grid-cols-4 gap-4">
+                  <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
+                    <div className="text-sm text-zinc-500 mb-1">Mensalidade</div>
+                    <div className="text-xl font-bold">R$ {monthlyPrice.toFixed(2)}</div>
+                    <div className="text-xs text-zinc-600">por cliente</div>
+                  </div>
+                  <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
+                    <div className="text-sm text-zinc-500 mb-1">Receita mensal</div>
+                    <div className="text-xl font-bold gradient-text">
+                      R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
+                    </div>
+                    <div className="text-xs text-zinc-600">recorrente</div>
+                  </div>
+                  <div className="p-5 rounded-2xl bg-zinc-800/50 text-center">
+                    <div className="text-sm text-zinc-500 mb-1">Receita anual</div>
+                    <div className="text-xl font-bold text-green-500">
+                      R$ {(revenue * 12).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
+                    </div>
+                    <div className="text-xs text-zinc-600">projeção</div>
+                  </div>
+                  <div className="p-5 rounded-2xl bg-green-900/20 border border-green-800/30 text-center">
+                    <div className="text-sm text-zinc-500 mb-1">Retorno em</div>
+                    <div className="flex items-center justify-center gap-1">
+                      <TrendingUp className="w-5 h-5 text-green-500" />
+                      <span className="text-xl font-bold text-green-500">{monthsToROI} {monthsToROI === 1 ? 'mês' : 'meses'}</span>
+                    </div>
+                    <div className="text-xs text-zinc-600">para recuperar</div>
+                  </div>
+                </div>
+
+                {/* Insight message */}
+                <div className="mt-6 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                  <p className="text-sm text-amber-200 text-center">
+                    {clients >= 200 ? (
+                      <>
+                        <span className="font-semibold">Excelente!</span> Com {clients} clientes você fatura{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>{' '}
+                        e recupera o investimento em apenas <span className="font-bold">{monthsToROI} {monthsToROI === 1 ? 'mês' : 'meses'}</span>.
+                      </>
+                    ) : clients >= 100 ? (
+                      <>
+                        <span className="font-semibold">Meta conservadora.</span> Com apenas {clients} clientes{' '}
+                        (menos de 1% do mercado da sua cidade) você já fatura{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>.
+                      </>
+                    ) : (
+                      <>
+                        <span className="font-semibold">Começando pequeno.</span> Mesmo com apenas {clients} clientes{' '}
+                        você já tem uma receita de{' '}
+                        <span className="font-bold">R$ {revenue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}/mês</span>{' '}
+                        para reinvestir no crescimento.
+                      </>
+                    )}
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Video caption */}
-            <p className="text-center text-zinc-600 text-sm mt-4">
-              Demonstração de 2 minutos do sistema completo
-            </p>
+            {/* Glow effect */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-red-500/10 to-amber-500/10 rounded-3xl blur-xl -z-10" />
           </motion.div>
         </div>
       </div>

@@ -1,16 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Linkedin, Github, Award, Briefcase, GraduationCap } from "lucide-react";
+import Image from "next/image";
+import { Linkedin, Github, Award, Briefcase, GraduationCap, Rocket, Headphones } from "lucide-react";
 
 const credentials = [
   {
     icon: Briefcase,
-    title: "12+ sistemas entregues",
-    description: "Projetos em produção gerando receita",
+    title: "12+ projetos entregues",
+    description: "Apps e sistemas em produção",
   },
   {
-    icon: Code,
+    icon: Rocket,
     title: "8 anos de experiência",
     description: "Desenvolvimento mobile e web",
   },
@@ -20,9 +21,9 @@ const credentials = [
     description: "Apps nativos iOS e Android",
   },
   {
-    icon: GraduationCap,
-    title: "Formação sólida",
-    description: "Engenharia de Software",
+    icon: Headphones,
+    title: "Suporte direto",
+    description: "Comunicação sem intermediários",
   },
 ];
 
@@ -44,15 +45,19 @@ export default function About() {
 
               {/* Photo container */}
               <div className="relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900">
-                {/* Placeholder photo - avatar style */}
-                <div className="aspect-square bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
-                  <div className="w-48 h-48 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white">B</span>
-                  </div>
+                {/* Real photo */}
+                <div className="aspect-square relative">
+                  <Image
+                    src="/bruno.png"
+                    alt="Bruno Sena - Desenvolvedor Full Stack"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
 
                 {/* Info bar */}
-                <div className="p-6 border-t border-zinc-800">
+                <div className="p-6 border-t border-zinc-800 bg-zinc-900/90 backdrop-blur-sm">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-xl font-bold">Bruno Sena</h3>
@@ -133,9 +138,9 @@ export default function About() {
                   <Award className="w-6 h-6 text-green-500" />
                 </div>
                 <div>
-                  <h4 className="font-bold">Compromisso de qualidade</h4>
+                  <h4 className="font-bold">Compromisso de entrega</h4>
                   <p className="text-zinc-400 text-sm">
-                    Se não ficar satisfeito em 30 dias, devolvo seu dinheiro. Sem perguntas.
+                    Sistema funcionando em 45 dias + 60 dias de suporte dedicado comigo.
                   </p>
                 </div>
               </div>

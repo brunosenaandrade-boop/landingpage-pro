@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Code2 } from "lucide-react";
 
 const links = [
-  { href: "#depoimentos", label: "Resultados" },
+  { href: "#depoimentos", label: "Portfólio" },
   { href: "#apps", label: "Sistema" },
   { href: "#sobre", label: "Quem sou" },
   { href: "#pricing", label: "Investimento" },
@@ -37,14 +36,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <Image
-              src="/logo.png"
-              alt="Seguro Pneu Pro"
-              width={40}
-              height={40}
-              className="rounded-lg"
-            />
-            <span className="font-semibold hidden sm:block">Seguro Pneu Pro</span>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+              <Code2 className="w-5 h-5 text-white" />
+            </div>
+            <span className="font-semibold hidden sm:block">Bruno Sena</span>
           </a>
 
           {/* Desktop links */}

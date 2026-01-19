@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle } from "lucide-react";
-import Image from "next/image";
+import { ArrowRight, MessageCircle, Code2, Rocket, Clock, Shield } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,20 +19,37 @@ export default function Footer() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Vamos fechar
+              Agilson, vamos tirar
               <br />
-              <span className="gradient-text">o projeto?</span>
+              <span className="gradient-text">sua ideia do papel?</span>
             </h2>
-            <p className="text-xl text-zinc-400 mb-10">
-              Se ficou alguma dúvida, estou à disposição para conversar.
+            <p className="text-xl text-zinc-400 mb-6">
+              Daqui 45 dias você pode estar com seu negócio funcionando.
             </p>
+
+            {/* Trust elements */}
+            <div className="flex flex-wrap justify-center gap-6 mb-10">
+              <div className="flex items-center gap-2 text-sm text-zinc-400">
+                <Rocket className="w-4 h-4 text-red-500" />
+                <span>Entrega em 45 dias</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-zinc-400">
+                <Clock className="w-4 h-4 text-blue-500" />
+                <span>60 dias de suporte</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-zinc-400">
+                <Shield className="w-4 h-4 text-green-500" />
+                <span>Código 100% seu</span>
+              </div>
+            </div>
+
             <a
-              href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20e%20quero%20fechar%20o%20projeto"
+              href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20do%20Seguro%20Pneu%20Pro%20e%20quero%20fechar%20o%20projeto"
               target="_blank"
               className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow"
             >
               <MessageCircle className="w-6 h-6" />
-              Fechar pelo WhatsApp
+              Vamos conversar
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
@@ -45,17 +61,16 @@ export default function Footer() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <Image
-                src="/logo.png"
-                alt="Seguro Pneu Pro"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
-              <span className="font-semibold">Seguro Pneu Pro</span>
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+                <Code2 className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <span className="font-semibold">Bruno Sena</span>
+                <p className="text-xs text-zinc-500">Desenvolvedor Full Stack</p>
+              </div>
             </div>
             <p className="text-zinc-500 text-sm">
-              &copy; 2026 - Todos os direitos reservados
+              Proposta exclusiva para Agilson &middot; Janeiro 2026
             </p>
           </div>
         </div>

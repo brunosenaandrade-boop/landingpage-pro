@@ -11,12 +11,12 @@ const faqs = [
       {
         question: "Por que o preço é tão baixo comparado ao mercado?",
         answer:
-          "Porque já desenvolvi esse sistema e domino a tecnologia. Uma software house cobra R$ 150k+ porque precisa pagar equipe, escritório, gerentes... Eu trabalho sozinho, direto com você. Isso corta intermediários e reduz custos sem perder qualidade.",
+          "Porque já desenvolvi sistemas similares e domino a tecnologia. Uma software house cobra R$ 150k+ porque precisa pagar equipe, escritório, gerentes... Eu trabalho direto com você, sem intermediários. Isso reduz custos significativamente sem perder qualidade.",
       },
       {
-        question: "E se eu não gostar ou não funcionar?",
+        question: "Como funciona o processo de desenvolvimento?",
         answer:
-          "Você tem 30 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, devolvo 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo meu.",
+          "Após fecharmos, começamos a personalização imediata. Você recebe acesso a um grupo no WhatsApp para acompanhar o progresso. A cada etapa concluída, mostro o andamento. Em 30-45 dias, seu sistema está no ar.",
       },
       {
         question: "Quais formas de pagamento vocês aceitam?",
@@ -189,7 +189,7 @@ export default function FAQ() {
           ))}
         </div>
 
-        {/* Guarantee box */}
+        {/* Commitment box */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -203,12 +203,12 @@ export default function FAQ() {
               </div>
               <div>
                 <h4 className="text-xl font-bold text-green-400 mb-2">
-                  Garantia de 30 dias
+                  Compromisso de entrega
                 </h4>
                 <p className="text-zinc-400">
-                  Se você não ficar 100% satisfeito com o sistema por qualquer motivo,
-                  devolvo todo o seu dinheiro em até 7 dias úteis. Sem perguntas,
-                  sem burocracia. O risco é todo meu.
+                  Seu sistema funcionando em 45 dias, com 60 dias de suporte técnico
+                  dedicado. Comunicação direta comigo pelo WhatsApp durante todo o processo.
+                  Você acompanha cada etapa do desenvolvimento.
                 </p>
               </div>
             </div>

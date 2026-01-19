@@ -76,7 +76,7 @@ export default function Pricing() {
             Quanto custa ter seu próprio negócio?
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
-            Menos do que você imagina. E com garantia de 30 dias.
+            Muito menos do que você imagina. E com suporte completo.
           </p>
         </motion.div>
 
@@ -101,7 +101,7 @@ export default function Pricing() {
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Pacote Completo</h3>
                   <p className="text-zinc-400">
-                    Sistema completo + bônus + garantia de 30 dias
+                    Sistema completo + bônus + 60 dias de suporte dedicado
                   </p>
                 </div>
                 <div className="text-right">
@@ -208,18 +208,18 @@ export default function Pricing() {
                   <div className="flex items-center gap-3">
                     <ShieldCheck className="w-8 h-8 text-green-500" />
                     <div>
-                      <div className="font-medium">Garantia de 30 dias</div>
+                      <div className="font-medium">Compromisso de entrega</div>
                       <div className="text-sm text-zinc-500">
-                        Não gostou? Devolvo seu dinheiro.
+                        Sistema funcionando em 45 dias + 60 dias de suporte.
                       </div>
                     </div>
                   </div>
                   <a
-                    href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20e%20quero%20fechar%20o%20projeto"
+                    href="https://wa.me/5548998649898?text=Olá%20Bruno!%20Vi%20a%20proposta%20do%20Seguro%20Pneu%20Pro%20e%20quero%20fechar%20o%20projeto"
                     target="_blank"
                     className="group flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl font-semibold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 glow-sm hover:glow w-full sm:w-auto"
                   >
-                    Fechar projeto
+                    Quero começar agora
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
