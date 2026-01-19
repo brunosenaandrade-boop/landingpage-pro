@@ -86,7 +86,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 text-sm text-zinc-500">
               <Sparkles className="w-4 h-4 text-amber-500" />
-              <span><span className="text-white font-medium">7 anos</span> de amizade</span>
+              <span><span className="text-white font-medium">8 anos</span> de amizade</span>
             </div>
           </motion.div>
 

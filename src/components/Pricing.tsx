@@ -107,7 +107,7 @@ export default function Pricing() {
                 <div>
                   <div className="text-[10px] sm:text-xs text-green-500 uppercase tracking-wider mb-1">Comigo</div>
                   <div className="text-lg sm:text-2xl font-bold text-green-400">R$ 16.500</div>
-                  <div className="text-[10px] sm:text-xs text-zinc-400 hidden sm:block">+ 7 anos de amizade</div>
+                  <div className="text-[10px] sm:text-xs text-zinc-400 hidden sm:block">+ 8 anos de amizade</div>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default function Pricing() {
                 <h5 className="font-semibold text-green-400 mb-4 text-center">Por que você não tem nada a perder:</h5>
                 <div className="grid md:grid-cols-3 gap-4 text-sm">
                   <div className="text-center">
-                    <div className="text-zinc-300 font-medium">Me conhece há 7 anos</div>
+                    <div className="text-zinc-300 font-medium">Me conhece há 8 anos</div>
                     <div className="text-zinc-500 text-xs">Amigos em comum, história juntos</div>
                   </div>
                   <div className="text-center">
@@ -312,7 +312,7 @@ export default function Pricing() {
 
             <div className="p-4 rounded-xl bg-zinc-800/50 border border-zinc-700/50">
               <p className="text-zinc-300 text-sm">
-                A gente se conhece há 7 anos, Agilson.
+                A gente se conhece há 8 anos, Agilson.
                 <br />
                 <span className="text-zinc-500">Você sabe que eu cumpro o que prometo.</span>
               </p>

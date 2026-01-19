@@ -21,7 +21,7 @@ export default function Footer() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Agilson, a gente se conhece
               <br />
-              <span className="gradient-text">há 7 anos</span>
+              <span className="gradient-text">há 8 anos</span>
             </h2>
             <p className="text-xl text-zinc-400 mb-4">
               Você sabe que eu sou de palavra.
