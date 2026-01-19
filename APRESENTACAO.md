@@ -1,262 +1,639 @@
-# Seguro Pneu Pro: Como Montar um Negócio de Assistência Veicular com Receita Recorrente
-
-## Introdução: O Sonho da Renda Passiva
-
-Imagina acordar de manhã, pegar o celular, e ver uma notificação: "Novo assinante: R$ 29,90 creditado". Você nem saiu da cama ainda e já tem dinheiro novo na conta. Parece bom demais pra ser verdade, né? Mas é exatamente assim que funciona um negócio de assinaturas.
-
-A grande questão é: como criar um negócio assim sem ser programador, sem ter milhões para investir, e sem passar anos estudando tecnologia?
-
-É isso que vamos explorar aqui. Vamos falar sobre o mercado de assistência veicular, por que ele é uma mina de ouro escondida, e como você pode montar seu próprio negócio nesse setor usando tecnologia pronta.
+# VSL - Seguro Pneu Pro
+## Script de Vídeo de Vendas (Alta Conversão)
 
 ---
 
-## O Problema que Ninguém Resolve Direito
-
-Deixa eu te contar uma coisa interessante. O Brasil tem mais de 45 milhões de veículos circulando. Quarenta e cinco milhões. E sabe o que todo motorista tem em comum? Medo de ficar na mão.
-
-Pneu furado na estrada, bateria que não pega, chaveiro que demora horas pra chegar. Todo mundo já passou por isso ou conhece alguém que passou. É uma situação estressante, às vezes perigosa, e quase sempre cara.
-
-E aqui está o ponto crucial: o mercado de assistência veicular é dominado por empresas gigantes como Porto Seguro e SulAmérica, que cobram caro e oferecem um serviço impessoal. Ou então por borracheiros informais que você encontra no Google Maps e torce pra dar certo.
-
-Não existe um meio termo. Não existe um serviço local, confiável, com preço justo e atendimento humanizado. Pelo menos não existia, até agora.
+# PARTE 1: HOOK + LOOP ABERTO (0:00 - 0:45)
+*Objetivo: Capturar atenção + criar curiosidade*
 
 ---
 
-## A Oportunidade: Seu Próprio "iFood de Pneus"
+**[ABRIR COM TELA PRETA - SOM DE NOTIFICAÇÃO]**
 
-Pensa comigo. O iFood revolucionou a entrega de comida conectando restaurantes a entregadores a clientes, tudo pelo celular. O Uber fez a mesma coisa com transporte. O Airbnb com hospedagem.
+*[Som: "pling" de notificação do celular]*
 
-Agora imagina aplicar esse mesmo modelo para assistência de pneus. Um app onde o cliente assina um plano mensal, tipo Netflix. Quando ele precisa de ajuda, aperta um botão e um prestador parceiro vai até ele. Simples assim.
+**[CORTE PARA: Tela de celular às 3:47 da manhã]**
 
-O cliente paga R$ 29,90 por mês e tem a tranquilidade de saber que está coberto. Você, como dono do negócio, recebe essa mensalidade todo mês, independente de ter chamado ou não. E os prestadores, os borracheiros e socorristas da sua região, ganham uma fonte de clientes constante.
+> "Novo pagamento recebido: R$ 29,90"
+> "Novo pagamento recebido: R$ 29,90"
+> "Novo pagamento recebido: R$ 29,90"
 
-Todo mundo ganha. Mas principalmente você, que fica no meio dessa cadeia coletando as assinaturas.
+**[NARRAÇÃO - Tom íntimo, como se estivesse contando um segredo]**
 
-Vamos fazer uma conta rápida. Se você tiver 200 assinantes pagando R$ 29,90 por mês, são quase R$ 6.000 de receita recorrente. Com 400 assinantes, são quase R$ 12.000. E o mais bonito? Essa receita entra todo mês, automaticamente, sem você precisar vender de novo.
+Às 3 da manhã meu celular tocou.
 
----
+Não era spam. Não era golpe.
 
-## O Desafio: Por Que Quase Ninguém Consegue Fazer Isso
+Era dinheiro. Entrando na conta de um cliente meu. Enquanto ele dormia.
 
-Agora vem a parte complicada. Pra montar um negócio assim, você precisa de tecnologia. Precisa de um app pro cliente, um app pro prestador, um painel pra você administrar tudo. Precisa de sistema de pagamento, GPS, notificações push, banco de dados.
+**[PAUSA DRAMÁTICA]**
 
-E aqui é onde 90% das pessoas desistem. Porque desenvolver tudo isso do zero é caro. Estamos falando de R$ 150.000 ou mais, fácil. Precisa de uma equipe de programadores trabalhando por 6 a 12 meses. E mesmo assim, não tem garantia de que vai funcionar.
+Hoje eu vou te mostrar exatamente como você pode ter isso também.
 
-Algumas pessoas tentam contratar um freelancer. Começa bem, o cara faz umas telas bonitas, aí some. Projeto abandonado no meio, dinheiro perdido.
+Mas antes, preciso te contar sobre uma oportunidade que 99% das pessoas não conhecem.
 
-Outras pessoas pensam em comprar uma solução pronta, tipo white-label. Mas aí você descobre que paga mensalidade eterna, o código não é seu, não pode personalizar nada, e se a empresa fechar você fica sem nada.
+E no final desse vídeo, eu vou te mostrar os números reais de quanto dá pra faturar com isso.
 
-E tem aqueles que pensam: "vou aprender a programar". Nobre, mas são 2 a 3 anos de estudo intenso pra conseguir fazer algo minimamente funcional. Tempo que você poderia estar faturando.
-
-Então a pessoa fica travada. Tem a ideia, vê a oportunidade, mas não consegue executar.
-
----
-
-## A Solução: Seguro Pneu Pro
-
-É aí que entra o Seguro Pneu Pro. É um sistema completo, já desenvolvido, testado e funcionando, que eu personalizo com a sua marca e entrego pronto pra você operar.
-
-São três aplicativos profissionais. O App do Cliente, que funciona no iPhone e no Android, onde as pessoas se cadastram, escolhem um plano, e pedem socorro quando precisam. O App do Prestador, também pra iPhone e Android, onde os socorristas recebem os chamados e atendem. E o Painel Administrativo, um site onde você gerencia tudo: clientes, prestadores, chamados, financeiro.
-
-Mas o mais importante é isso: você recebe o código fonte completo. Não é aluguel, não é licença, não é mensalidade. O sistema é seu. Você pode modificar, evoluir, contratar outro programador pra mexer, fazer o que quiser. É seu patrimônio digital.
+**[TEXTO NA TELA: "Fique até o final para ver os números"]**
 
 ---
 
-## Como Funciona o App do Cliente
-
-Deixa eu te mostrar a jornada do seu cliente. Ele baixa o app na loja, faz um cadastro simples com nome, CPF e dados do veículo. Escolhe um plano de assinatura, digamos o básico de R$ 29,90 por mês, e cadastra o cartão ou configura o PIX.
-
-Pronto. A partir dali, ele está coberto.
-
-Aí um dia, numa terça-feira à noite, o pneu fura. O cara está numa rua escura, não conhece ninguém por perto. Abre o app, aperta o botão de emergência. O GPS já pega a localização automaticamente.
-
-Em segundos, os prestadores mais próximos recebem uma notificação. Um deles aceita o chamado. No app do cliente aparece: "João está a caminho, chegada estimada em 12 minutos". E ele vê o prestador se aproximando no mapa, tipo Uber.
-
-O João chega, troca o pneu, tira foto do serviço concluído. O cliente avalia com 5 estrelas. Fim. Experiência simples, rápida, confiável.
-
-E o melhor: você não precisou fazer nada. O sistema cuidou de tudo automaticamente.
+# PARTE 2: A OPORTUNIDADE ESCONDIDA (0:45 - 3:00)
+*Objetivo: Abrir a mente para o potencial*
 
 ---
 
-## Como Funciona o App do Prestador
+**[MOSTRAR: Gráficos e números na tela]**
 
-Agora pelo lado do prestador. O João é borracheiro há 15 anos. Trabalha bem, mas vive de boca a boca. Às vezes o dia é bom, às vezes fica parado.
+**[NARRAÇÃO]**
 
-Aí ele se cadastra no seu app. Você aprova o cadastro dele no painel, verifica os documentos, e ele está ativo.
+O Brasil tem **45 milhões de veículos**.
 
-Quando um cliente pede socorro perto dele, o celular vibra com uma notificação. Ele vê os detalhes: localização, tipo de veículo, qual o problema. Tem um tempo limite pra aceitar, digamos 2 minutos. Se ele não aceitar, vai pro próximo prestador da fila.
+45 milhões.
 
-Ele aceita, e o app já abre o Waze ou Google Maps com a rota até o cliente. Chega lá, faz o serviço, registra as fotos, e finaliza no app. No fim da semana, ele abre o dashboard e vê quanto ganhou: "7 atendimentos, R$ 280 de comissão".
+Só na sua cidade, quantos carros você acha que tem? 50 mil? 100 mil? 200 mil?
 
-Você define quanto paga por atendimento. Pode ser um valor fixo ou percentual. O importante é que o prestador tem uma fonte previsível de clientes, e você tem uma rede de atendimento pronta sem precisar contratar ninguém CLT.
+E sabe o que todo dono de carro tem em comum?
 
----
+**[TEXTO APARECENDO UM POR UM:]**
 
-## Como Funciona o Painel Administrativo
+- Medo de pneu furar no meio da noite
+- Medo da bateria morrer no estacionamento do shopping
+- Medo de trancar a chave dentro do carro
+- Medo do motor ferver na estrada
 
-E você? Você entra no painel pelo computador ou celular e vê tudo acontecendo.
+Todo mundo já passou por isso. Ou conhece alguém que passou.
 
-O dashboard mostra os números principais: quantos clientes ativos, quantos chamados hoje, quanto de receita no mês. Tem gráficos de evolução, mapa com os chamados em tempo real.
+**[PAUSA]**
 
-Na aba de clientes, você vê todo mundo que assinou. Pode filtrar por plano, por status de pagamento, por região. Vê o histórico de cada um.
+E o que a pessoa faz quando acontece?
 
-Na aba de prestadores, você aprova novos cadastros, bloqueia quem não está performando bem, vê a avaliação média de cada um.
+**[NARRAÇÃO - tom de frustração]**
 
-Na aba financeira, você vê as entradas, as saídas, o lucro. Pode exportar relatórios, acompanhar inadimplência, tudo organizado.
+Pesquisa "borracheiro perto de mim" no Google.
 
-E o mais legal: você configura os preços, os planos, as regras de negócio. Quer criar um plano premium de R$ 59,90 com atendimento prioritário? Você faz ali mesmo, sem precisar de programador.
+Liga pra um número aleatório.
 
----
+Torce pra não ser golpe.
 
-## Quem Já Está Faturando com Isso
+Paga R$ 150, R$ 200.
 
-Agora você deve estar pensando: "tá, mas funciona na prática?" Deixa eu te contar algumas histórias.
+E nunca mais vê o cara.
 
-O Ricardo é de São Paulo. Ele investiu no sistema e em dois meses já tinha recuperado o investimento. Hoje ele tem 280 clientes ativos e fatura R$ 8.200 por mês. Ele me disse: "o sistema roda praticamente sozinho, só entro pra ver os números".
+**[PAUSA]**
 
-O Marcos era caminhoneiro em Curitiba. Cansou da estrada e queria empreender, mas não tinha ideia do quê. Conheceu o Seguro Pneu Pro, investiu, e hoje fatura R$ 4.800 por mês. Mais do que ganhava dirigindo, com qualidade de vida muito melhor.
+Agora imagina o seguinte cenário:
 
-A Fernanda é de Belo Horizonte e é empreendedora nata. Ela começou com medo, não entendia nada de tecnologia. Mas o sistema é simples de operar, dei todo o suporte, e em 6 meses ela já tinha o maior serviço de assistência de pneus da região dela. Hoje são 420 clientes e mais de R$ 12.000 por mês.
+O motorista paga **R$ 29,90 por mês**. Tipo uma Netflix do socorro.
 
-Essas pessoas não são programadores. Não são gênios de tecnologia. São pessoas normais que viram uma oportunidade e tiveram a ferramenta certa pra executar.
+Quando ele precisa de ajuda, abre o app no celular, aperta UM botão, e um prestador vai até ele. Em minutos. Com rastreamento GPS. Tudo profissional.
 
----
+O cliente tem paz de espírito.
 
-## O Que Diferencia Isso de Outras Soluções
+O prestador tem clientes garantidos.
 
-Você pode estar pensando: "mas existem outras opções no mercado, né?" Existem. Mas deixa eu te explicar por que o Seguro Pneu Pro é diferente.
+E você, no meio disso, recebe R$ 29,90 de cada um deles. Todo mês. Automaticamente.
 
-Primeiro: o código é seu. Isso é enorme. Na maioria das soluções white-label, você paga mensalidade eterna e nunca é dono de nada. Se a empresa fecha, você perde tudo. Aqui não. Você recebe todo o código fonte. Se amanhã você quiser contratar outro programador pra evoluir o sistema, você pode. É seu patrimônio.
+**[MOSTRAR CÁLCULO - Animação dos números crescendo]**
 
-Segundo: não tem mensalidade do sistema. Você paga uma vez pelo desenvolvimento e pronto. Os únicos custos recorrentes são de infraestrutura básica: servidor custa uns R$ 50 a R$ 100 por mês, e as contas de desenvolvedor nas lojas de app custam uma taxa anual pequena. Mas do sistema em si, zero mensalidade.
+| Clientes | Mensalidade | Receita/mês |
+|----------|-------------|-------------|
+| 100      | R$ 29,90    | **R$ 2.990** |
+| 200      | R$ 29,90    | **R$ 5.980** |
+| 400      | R$ 29,90    | **R$ 11.960** |
+| 500      | R$ 29,90    | **R$ 14.950** |
 
-Terceiro: é personalizado pra você. Não é um template genérico que todo mundo usa igual. Eu coloco sua marca, suas cores, seu logo. Quando seu cliente baixa o app, ele vê a sua empresa, não uma marca genérica.
+Receita recorrente. Previsível. Que só cresce.
 
-Quarto: você fala direto comigo. Não é uma empresa com 500 funcionários onde você vira um número de ticket. Sou eu, Bruno, desenvolvedor há mais de 8 anos, que vai desenvolver, entregar e dar suporte. Você tem meu WhatsApp direto.
+**[PAUSA DRAMÁTICA]**
 
----
+Parece bom demais pra ser verdade?
 
-## Quem Sou Eu
-
-Aliás, deixa eu me apresentar direito. Meu nome é Bruno e trabalho com desenvolvimento de software há mais de 8 anos. Já entreguei mais de 12 sistemas como esse, todos funcionando e gerando receita pros meus clientes.
-
-O Seguro Pneu Pro nasceu de um projeto real. Um cliente me contratou pra desenvolver um sistema de assistência na cidade dele. Funcionou tão bem que eu pensei: "por que não oferecer isso pra outros empreendedores?"
-
-Não sou uma software house com estrutura cara de escritório, gerentes de projeto, reuniões intermináveis. Sou um desenvolvedor especializado que trabalha direto com você. Isso significa menos burocracia, menos custo, e comunicação muito mais rápida.
-
-Se você quiser ver meu trabalho, meu GitHub é público. Se quiser conversar antes de decidir, meu WhatsApp está aberto. Transparência total.
-
----
-
-## O Que Está Incluso no Pacote
-
-Vamos ao concreto. O que exatamente você recebe?
-
-Na parte de aplicativos: o App do Cliente para Android e iOS, o App do Prestador para Android e iOS, e o Painel Administrativo Web. Todos personalizados com sua marca.
-
-Na parte técnica: código fonte completo, sistema de pagamentos integrado com PIX e cartão de crédito, GPS e rastreamento em tempo real, notificações push configuradas, e banco de dados na nuvem já configurado.
-
-Na parte de lançamento: eu cuido de publicar os apps na Google Play Store e na Apple App Store. Você não precisa se preocupar com isso.
-
-Na parte de suporte: você tem 60 dias de suporte técnico incluso, onde tiro qualquer dúvida e corrijo qualquer bug que aparecer. Também incluo um treinamento em vídeo mostrando como operar o sistema, e um guia de aquisição de clientes com estratégias testadas pra conseguir seus primeiros assinantes.
+Deixa eu te mostrar por que a maioria das pessoas não consegue fazer isso funcionar.
 
 ---
 
-## O Investimento
-
-Agora a pergunta que todo mundo faz: quanto custa?
-
-Pra desenvolver um sistema assim do zero, você gastaria pelo menos R$ 150.000. Provavelmente mais. E levaria de 6 a 12 meses, com alto risco de dar errado.
-
-O Seguro Pneu Pro custa R$ 16.500. Um décimo do preço de mercado.
-
-E você pode parcelar em até 6 vezes sem juros, ficando em R$ 2.750 por mês. Se preferir pagar no PIX, tem 5% de desconto.
-
-Fazendo as contas de retorno: se você conseguir 100 clientes pagando R$ 29,90 por mês, são quase R$ 3.000 de receita mensal. Em 6 meses você recupera o investimento. A partir do sétimo mês, é lucro líquido.
-
-E os clientes que me procuram geralmente chegam em 200 a 400 assinantes dentro de um ano. Estamos falando de R$ 6.000 a R$ 12.000 por mês de receita recorrente.
+# PARTE 3: O MURO INVISÍVEL (3:00 - 5:30)
+*Objetivo: Mostrar o problema da execução*
 
 ---
 
-## A Garantia
+**[NARRAÇÃO]**
 
-Eu entendo que investir em algo novo dá medo. E se não funcionar? E se eu não gostar? E se não conseguir clientes?
+Quantas vezes você já teve uma ideia de negócio... e ficou travado?
 
-Por isso eu ofereço uma garantia de 30 dias. Se você não ficar 100% satisfeito com o sistema por qualquer motivo, eu devolvo todo o seu dinheiro em até 7 dias úteis. Sem perguntas, sem burocracia.
+Você vê a oportunidade. Sabe que dá certo. Mas quando vai executar, esbarra em um muro.
 
-O risco é todo meu. Se eu não entregar o que prometo, você não paga nada.
+"Preciso de um app."
 
-Isso mostra o quanto eu confio no meu trabalho e no potencial desse negócio.
+"Preciso de um site."
+
+"Preciso de tecnologia."
+
+**[PAUSA]**
+
+Pra montar um negócio de assistência veicular como esse, você precisa de:
+
+**[LISTA APARECENDO NA TELA]**
+
+- App do cliente (iOS + Android)
+- App do prestador (iOS + Android)
+- Painel administrativo web
+- Sistema de pagamento com PIX e cartão
+- GPS e rastreamento em tempo real
+- Notificações push
+- Banco de dados na nuvem
+- Servidor configurado
+
+**[NARRAÇÃO]**
+
+É muita coisa.
+
+E aí você tem 4 opções:
+
+**[OPÇÃO 1 - Tela vermelha]**
+
+**Desenvolver do zero.**
+
+Vai precisar de uma equipe. 3 a 5 desenvolvedores. Trabalhando por 6 a 12 meses.
+
+Custo? **R$ 150.000**. No mínimo.
+
+E ainda vai ter bugs. Atrasos. Dor de cabeça.
+
+**[OPÇÃO 2 - Tela vermelha]**
+
+**Contratar freelancer.**
+
+Começa bem. O cara faz umas telas bonitas. Cobra barato.
+
+Aí some. Projeto morto. Dinheiro perdido.
+
+Eu já vi isso acontecer dezenas de vezes.
+
+**[OPÇÃO 3 - Tela vermelha]**
+
+**Comprar solução pronta (white-label).**
+
+Você nunca é dono. Paga mensalidade eterna. Não pode personalizar.
+
+E se a empresa fecha? Você perde tudo.
+
+**[OPÇÃO 4 - Tela vermelha]**
+
+**Aprender a programar.**
+
+Nobre. Mas são 2, 3 anos de estudo.
+
+Quando você aprender, a oportunidade já passou.
+
+**[PAUSA - Tela preta]**
+
+Todas as opções têm problema.
+
+Foi por isso que eu criei uma quinta opção.
 
 ---
 
-## Como Conseguir os Primeiros Clientes
-
-Uma dúvida comum é: "ok, tenho o sistema, mas como consigo clientes?" Boa pergunta.
-
-Junto com o sistema, eu entrego um guia de aquisição de clientes com estratégias que já funcionaram pros outros empresários.
-
-A primeira estratégia é fazer parceria com borracharias. Você vai nas borracharias da sua região e oferece uma comissão por cada cliente indicado. O borracheiro já tem contato com motoristas todo dia, é uma indicação natural.
-
-A segunda estratégia é anúncios no Facebook e Instagram segmentados por região. Você pode começar com R$ 20 por dia e atingir milhares de motoristas da sua cidade.
-
-A terceira estratégia é panfletagem em postos de gasolina. Parece antigo, mas funciona muito bem. Motorista parado abastecendo é o público perfeito pra receber um panfleto sobre seguro de pneu.
-
-Clientes que seguiram essas estratégias conseguiram os primeiros 50 assinantes em 30 dias. É questão de execução.
+# PARTE 4: A SOLUÇÃO (5:30 - 8:00)
+*Objetivo: Apresentar o produto*
 
 ---
 
-## O Processo de Desenvolvimento
+**[TRANSIÇÃO: Tela com logo Seguro Pneu Pro]**
 
-Se você decidir avançar, como funciona?
+**[NARRAÇÃO - tom de revelação]**
 
-Primeiro, a gente conversa. Você me conta sua ideia, suas dúvidas, sua situação. Eu entendo seu contexto e vejo se faz sentido.
+Se chama **Seguro Pneu Pro**.
 
-Depois, eu preparo uma proposta personalizada com escopo, prazo e condições de pagamento. Você analisa com calma.
+É um sistema completo de assistência veicular que eu desenvolvi, testei, e disponibilizo para empreendedores que querem montar esse negócio.
 
-Se fechar, eu começo o desenvolvimento. O prazo é de 30 a 45 dias, dependendo do nível de personalização. Durante esse período, faço entregas parciais pra você acompanhar a evolução.
+**[NARRAÇÃO]**
 
-Na entrega final, você recebe tudo funcionando, com treinamento em vídeo pra saber operar. Eu cuido de publicar nas lojas de app.
+São 3 aplicações que funcionam juntas:
 
-E depois, você tem 60 dias de suporte onde estou disponível pra qualquer dúvida ou ajuste.
+**[TEXTO NA TELA + Ícone de cada app]**
+
+**1. App do Cliente**
+
+Funciona no iPhone e no Android.
+
+O cliente baixa, faz o cadastro, escolhe um plano, e está coberto.
+
+Quando precisa de socorro, aperta um botão. O GPS pega a localização automaticamente. E ele acompanha o prestador chegando no mapa. Tipo Uber.
+
+**2. App do Prestador**
+
+Os borracheiros e socorristas da sua região se cadastram aqui.
+
+Quando um cliente pede ajuda, o prestador mais próximo recebe uma notificação. Aceita o chamado. O app abre o Waze com a rota até o cliente.
+
+Ele faz o serviço, finaliza no app. E vê quanto ganhou.
+
+**3. Painel Administrativo**
+
+É onde você controla tudo.
+
+Quantos clientes ativos. Quantos chamados. Quanto de receita. Quais prestadores estão performando bem.
+
+Você configura os preços, os planos, as regras. Tudo num lugar só.
+
+**[PAUSA]**
+
+Mas o mais importante é isso:
+
+**[TEXTO GRANDE NA TELA: "CÓDIGO FONTE 100% SEU"]**
+
+Você recebe o **código fonte completo**.
+
+Não é aluguel. Não é licença. Não é mensalidade.
+
+O sistema é seu. Pra sempre.
+
+Pode modificar. Pode contratar outro programador pra evoluir. Pode até vender se quiser.
+
+É o seu patrimônio digital.
 
 ---
 
-## Por Que Agir Agora
-
-Último ponto: por que não deixar pra depois?
-
-Primeiro, porque eu atendo apenas 3 projetos por mês. Prefiro fazer poucos com qualidade do que muitos de qualquer jeito. Então as vagas são limitadas.
-
-Segundo, porque o mercado ainda está aberto. Poucas cidades têm um serviço de assistência de pneus bem organizado. Quem chegar primeiro, domina.
-
-Terceiro, porque quanto antes você começar, antes começa a faturar. Cada mês que passa é receita que você deixa na mesa.
+# PARTE 5: QUEM SOU EU (8:00 - 9:30)
+*Objetivo: Gerar confiança*
 
 ---
 
-## Conclusão: Seu Negócio, Sua Marca, Seu Código
+**[MOSTRAR: Sua foto + credenciais]**
 
-Então é isso. O Seguro Pneu Pro é a forma mais rápida, mais barata e menos arriscada de você montar um negócio de assistência veicular com receita recorrente.
+**[NARRAÇÃO]**
 
-Você recebe um sistema completo, personalizado com sua marca, com código fonte seu pra sempre. Sem mensalidade, sem dependência, sem complicação.
+Você deve estar pensando: tá, mas quem é você pra me oferecer isso?
 
-O investimento é de R$ 16.500, pode parcelar em 6x, e tem garantia de 30 dias. Se não gostar, devolvo o dinheiro.
+**[TEXTO NA TELA: Bruno Sena - Desenvolvedor Full Stack]**
 
-Vários empreendedores já estão faturando R$ 5.000, R$ 8.000, R$ 12.000 por mês com esse modelo. A próxima história de sucesso pode ser a sua.
+Meu nome é Bruno Sena.
 
-Se você quer saber mais, é só me chamar no WhatsApp: 48 99864-9898. Respondo em até 2 horas.
+Sou desenvolvedor há **8 anos**.
+
+Já entreguei **mais de 12 sistemas** funcionando. Todos gerando receita pros meus clientes.
+
+O Seguro Pneu Pro nasceu de um projeto real. Eu desenvolvi pra um cliente, funcionou muito bem, e decidi oferecer pra outros empreendedores.
+
+**[PAUSA]**
+
+Eu não sou uma software house.
+
+Não tenho escritório caro, gerente de projeto, reunião interminável.
+
+Sou um desenvolvedor especializado que trabalha direto com você.
+
+Isso significa:
+
+- Menos burocracia
+- Menos custo
+- Comunicação muito mais rápida
+
+Quando você me chama no WhatsApp, sou eu que respondo. Não um atendente lendo script.
+
+---
+
+# PARTE 6: O QUE VOCÊ RECEBE (9:30 - 11:30)
+*Objetivo: Empilhamento de valor*
+
+---
+
+**[NARRAÇÃO]**
+
+Então deixa eu te mostrar exatamente o que você recebe.
+
+**[LISTA ANIMADA - Item por item]**
+
+**SISTEMA COMPLETO:**
+
+✓ App do Cliente (Android + iOS)
+✓ App do Prestador (Android + iOS)
+✓ Painel Administrativo Web
+✓ Tudo personalizado com sua marca, seu logo, suas cores
+
+**PARTE TÉCNICA:**
+
+✓ Código fonte 100% seu (pra sempre)
+✓ Sistema de pagamentos integrado (PIX + Cartão)
+✓ GPS e rastreamento em tempo real
+✓ Notificações push configuradas
+✓ Banco de dados na nuvem
+✓ Servidor configurado e funcionando
+
+**LANÇAMENTO:**
+
+✓ Publicação na Google Play Store
+✓ Publicação na Apple App Store
+✓ Eu cuido de todo o processo burocrático
+
+**SUPORTE E TREINAMENTO:**
+
+✓ 60 dias de suporte técnico direto comigo
+✓ Treinamento em vídeo completo
+✓ Guia de aquisição de primeiros clientes
+
+**[DESTAQUE ESPECIAL]**
+
+Esse guia é importante.
+
+Ele mostra exatamente como conseguir seus primeiros 50 clientes.
+
+Estratégias que funcionam na prática.
+
+**[SOMA DO VALOR NA TELA]**
+
+| Item | Valor de mercado |
+|------|-----------------|
+| Desenvolvimento do sistema | R$ 150.000 |
+| Publicação nas lojas | R$ 2.500 |
+| Configuração de servidor | R$ 1.200 |
+| Treinamento + Guia | R$ 997 |
+| Suporte 60 dias | R$ 3.000 |
+| **TOTAL** | **R$ 157.697** |
+
+---
+
+# PARTE 7: PREÇO (11:30 - 13:00)
+*Objetivo: Ancoragem e revelação*
+
+---
+
+**[NARRAÇÃO]**
+
+Quanto custa tudo isso?
+
+Olha, desenvolver um sistema assim do zero custa **R$ 150.000**. No mínimo.
+
+Eu sei porque eu já fiz orçamentos assim. E já vi gente pagar.
+
+Fora que demora 6 a 12 meses. E tem alto risco de dar errado.
+
+**[PAUSA]**
+
+O Seguro Pneu Pro não custa R$ 150.000.
+
+**[TEXTO: Risco sobre "R$ 150.000"]**
+
+Não custa R$ 100.000.
+
+**[TEXTO: Risco sobre "R$ 100.000"]**
+
+Não custa nem R$ 50.000.
+
+**[TEXTO: Risco sobre "R$ 50.000"]**
+
+**[REVELAÇÃO - Número grande, animação especial]**
+
+O investimento é de **R$ 16.500**.
+
+**[PAUSA PARA ABSORVER]**
+
+Um décimo do preço de mercado.
+
+Pra você ter seu próprio negócio funcionando em 45 dias.
+
+**[MOSTRAR PARCELAMENTO]**
+
+E você pode parcelar em até **6x sem juros**.
+
+Fica **R$ 2.750 por mês**.
+
+**[CÁLCULO DE ROI NA TELA]**
+
+Faz a conta comigo:
+
+- 100 clientes × R$ 29,90 = R$ 2.990/mês
+- Parcela: R$ 2.750/mês
+
+**Você paga a parcela com a receita do próprio negócio.**
+
+Em 6 meses, está quitado.
+
+Do 7º mês em diante? **Lucro líquido.**
+
+E a receita só cresce. Porque os clientes continuam pagando. E você continua conquistando novos.
+
+---
+
+# PARTE 8: GARANTIA (13:00 - 14:00)
+*Objetivo: Zerar o risco*
+
+---
+
+**[NARRAÇÃO - tom de compreensão]**
+
+Eu sei que investir em algo novo dá medo.
+
+E se não funcionar? E se eu não conseguir operar? E se não conseguir clientes?
+
+Por isso eu faço questão de tirar todo o risco de você.
+
+**[MOSTRAR: Selo de garantia grande]**
+
+Eu ofereço uma **garantia incondicional de 30 dias**.
+
+Se em 30 dias você não ficar 100% satisfeito com o sistema...
+
+Por qualquer motivo...
+
+Mesmo que seja só porque você mudou de ideia...
+
+Eu devolvo **todo o seu dinheiro** em até 7 dias úteis.
+
+Sem perguntas. Sem burocracia. Sem letra miúda.
+
+**[PAUSA]**
+
+O risco é todo meu.
+
+Se eu não entregar o que prometo, você não paga nada.
+
+Simples assim.
+
+---
+
+# PARTE 9: PROCESSO (14:00 - 15:00)
+*Objetivo: Mostrar que é simples e rápido*
+
+---
+
+**[NARRAÇÃO]**
+
+Deixa eu te mostrar exatamente como funciona o processo.
+
+**[TIMELINE VISUAL ANIMADA]**
+
+**SEMANA 1-2: Personalização**
+
+Você me passa sua marca, logo, cores. Eu personalizo todo o sistema com a identidade do seu negócio.
+
+**SEMANA 3-4: Configuração**
+
+Configuro o servidor, banco de dados, sistema de pagamentos. Tudo funcionando e testado.
+
+**SEMANA 5-6: Publicação**
+
+Publico os apps na Google Play e App Store. Você recebe acesso a tudo.
+
+**DIA 45: SEU NEGÓCIO NO AR**
+
+Sistema funcionando. Pronto pra receber clientes e faturar.
+
+**[PAUSA]**
+
+Durante todo esse processo, eu estou do seu lado.
+
+Qualquer dúvida, você me chama no WhatsApp.
+
+E depois da entrega, você ainda tem 60 dias de suporte pra tirar dúvidas e resolver qualquer problema.
+
+---
+
+# PARTE 10: URGÊNCIA (15:00 - 15:45)
+*Objetivo: Criar senso de decisão*
+
+---
+
+**[NARRAÇÃO - tom direto]**
+
+Agora, uma coisa importante.
+
+Eu não sou uma fábrica.
+
+Cada projeto que eu pego recebe atenção individual. Eu personalizo, configuro, publico, dou suporte.
+
+Isso leva tempo. E eu faço questão de fazer bem feito.
+
+Por isso, **eu aceito no máximo 3 projetos por mês**.
+
+Se eu pegar mais do que isso, a qualidade cai. E qualidade é o que me diferencia.
+
+**[PAUSA]**
+
+Essa proposta que você está vendo?
+
+Eu preparei especialmente pra você.
+
+Se você está vendo isso hoje, é porque eu tenho uma vaga disponível agora.
+
+Mas eu sinceramente não sei por quanto tempo.
+
+---
+
+# PARTE 11: CTA FINAL (15:45 - 17:00)
+*Objetivo: Fechamento*
+
+---
+
+**[NARRAÇÃO - tom de conclusão]**
+
+Então é assim.
+
+Você tem duas opções agora.
+
+**[TELA DIVIDIDA]**
+
+**OPÇÃO 1:**
+
+Você pode fechar essa página.
+
+Voltar pra sua rotina.
+
+Continuar tendo ideias que não saem do papel.
+
+Daqui a 6 meses, você vai estar no mesmo lugar.
+
+**OPÇÃO 2:**
+
+Ou você pode clicar no botão aqui embaixo. Agora.
+
+Me chama no WhatsApp.
+
+A gente conversa, eu tiro suas dúvidas, e se fizer sentido pra você, a gente fecha.
+
+**[MOSTRAR: Timeline resumida]**
+
+- Hoje: Você decide
+- Em 45 dias: Seu negócio funcionando
+
+Com sua marca. Com seu sistema. Com seu código.
+
+**[CTA FINAL - Tela cheia]**
+
+A escolha é sua.
+
+Mas se você chegou até aqui, se você assistiu até agora...
+
+É porque alguma coisa fez sentido.
+
+Não deixa essa oportunidade passar.
+
+Clica no botão. Me chama no WhatsApp.
+
+E vamos fazer acontecer.
+
+**[ENCERRAMENTO - Logo + Frase de impacto]**
+
+**Seguro Pneu Pro.**
 
 Seu negócio. Sua marca. Seu código.
 
+**[BOTÃO PULSANDO: "QUERO FECHAR O PROJETO"]**
+
 ---
 
-## Informações de Contato
+# INFORMAÇÕES TÉCNICAS
+
+## Duração
+- **Tempo total:** ~17 minutos
+- **Versão curta:** 10-12 minutos (acelerar cálculos)
+
+## Estrutura de Alta Conversão Aplicada
+- **Hook emocional** (notificação às 3h da manhã)
+- **Loop aberto** (promessa de revelar números no final)
+- **Oportunidade de mercado** (45 milhões de veículos)
+- **4 alternativas que não funcionam** (elimina objeções)
+- **Ancoragem de preço** (R$ 157k → R$ 16.5k)
+- **Garantia incondicional** (remove risco)
+- **Processo claro** (timeline de 45 dias)
+- **Urgência real** (3 projetos/mês)
+- **CTA com contraste** (opção 1 vs opção 2)
+
+## Tom de voz
+- Confiante, não arrogante
+- Conversa de profissional pra profissional
+- Direto, sem enrolação
+- Sem parecer "vendedor de curso"
+
+## Elementos visuais
+1. Notificações de pagamento no celular (hook)
+2. Gráficos de mercado (oportunidade)
+3. Tabelas de cálculo de receita
+4. Ícones dos 3 apps (sistema)
+5. Timeline visual do processo
+6. Selo de garantia
+7. Botão de WhatsApp pulsando no final
+
+## Música
+- Fundo suave e moderno nos primeiros 10 minutos
+- Aumenta levemente na revelação do preço
+- Intensifica no CTA final
+
+## Edição
+- Cortes a cada 3-5 segundos para manter atenção
+- Texto na tela reforçando pontos-chave
+- Zoom in em números importantes
+- Transições suaves entre seções
+- Efeito de "risco" nos preços durante ancoragem
+
+---
+
+## Contato
 
 **Bruno Sena Andrade**
-Desenvolvedor Full Stack | 8+ anos de experiência
-
 - WhatsApp: (48) 99864-9898
-- GitHub: github.com/brunosenaandrade-boop
 - Investimento: R$ 16.500 (ou 6x de R$ 2.750)
-- Prazo de entrega: 30-45 dias
-- Garantia: 30 dias ou dinheiro de volta
+- Prazo: 30-45 dias
+- Garantia: 30 dias incondicional
