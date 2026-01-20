@@ -48,9 +48,9 @@ const bonuses = [
 ];
 
 const paymentMethods = [
-  { name: "PIX", highlight: "5% de desconto", icon: "💰" },
-  { name: "Cartão", highlight: "Até 6x sem juros", icon: "💳" },
-  { name: "Boleto", highlight: "À vista", icon: "📄" },
+  { name: "PIX", highlight: "Transferência", icon: "💰" },
+  { name: "Cartão", highlight: "Crédito/Débito", icon: "💳" },
+  { name: "Boleto", highlight: "Bancário", icon: "📄" },
 ];
 
 export default function Pricing() {
@@ -125,12 +125,24 @@ export default function Pricing() {
                   <div className="text-5xl md:text-6xl font-bold gradient-text">
                     R$ 16.500
                   </div>
-                  {/* Installment highlight */}
-                  <div className="mt-3 inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full">
-                    <CreditCard className="w-4 h-4 text-green-500" />
-                    <span className="text-green-400 font-semibold">
-                      ou 6x de R$ 2.750 sem juros
-                    </span>
+                  {/* Payment plan highlight */}
+                  <div className="mt-4 p-4 bg-green-500/10 border border-green-500/30 rounded-2xl text-left">
+                    <div className="text-xs text-green-400 uppercase tracking-wider mb-2 font-medium">
+                      Condições de pagamento
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                      <span className="text-white font-semibold text-lg">
+                        R$ 7.000 de entrada
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                      <span className="text-white font-semibold text-lg">
+                        + 9x de R$ 1.000
+                      </span>
+                      <span className="text-zinc-400 text-sm">+ 1x R$ 500</span>
+                    </div>
                   </div>
                   <div className="mt-2 text-xs text-zinc-500">
                     Menos que uma moto. E te dá um negócio.
@@ -194,10 +206,35 @@ export default function Pricing() {
                     ))}
                   </div>
 
+                  {/* Payment breakdown */}
+                  <div className="mt-8 p-5 rounded-2xl bg-zinc-800/50 border border-zinc-700">
+                    <h5 className="text-sm text-zinc-300 mb-4 font-medium">
+                      Resumo do pagamento
+                    </h5>
+                    <div className="space-y-3 text-sm">
+                      <div className="flex justify-between items-center pb-3 border-b border-zinc-700">
+                        <span className="text-zinc-400">Entrada (pra começar)</span>
+                        <span className="text-white font-semibold">R$ 7.000</span>
+                      </div>
+                      <div className="flex justify-between items-center pb-3 border-b border-zinc-700">
+                        <span className="text-zinc-400">9 parcelas mensais</span>
+                        <span className="text-white font-semibold">9x R$ 1.000</span>
+                      </div>
+                      <div className="flex justify-between items-center pb-3 border-b border-zinc-700">
+                        <span className="text-zinc-400">Última parcela</span>
+                        <span className="text-white font-semibold">R$ 500</span>
+                      </div>
+                      <div className="flex justify-between items-center pt-1">
+                        <span className="text-zinc-300 font-medium">Total</span>
+                        <span className="text-green-400 font-bold text-lg">R$ 16.500</span>
+                      </div>
+                    </div>
+                  </div>
+
                   {/* Payment methods */}
-                  <div className="mt-8">
-                    <h5 className="text-sm text-zinc-400 mb-4">
-                      Formas de pagamento
+                  <div className="mt-6">
+                    <h5 className="text-sm text-zinc-400 mb-3">
+                      Aceito pagamento via
                     </h5>
                     <div className="flex flex-wrap gap-3">
                       {paymentMethods.map((method) => (
@@ -206,12 +243,7 @@ export default function Pricing() {
                           className="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-800 border border-zinc-700"
                         >
                           <span>{method.icon}</span>
-                          <div className="text-sm">
-                            <span className="font-medium">{method.name}</span>
-                            <span className="text-zinc-500 ml-2">
-                              {method.highlight}
-                            </span>
-                          </div>
+                          <span className="text-sm font-medium">{method.name}</span>
                         </div>
                       ))}
                     </div>

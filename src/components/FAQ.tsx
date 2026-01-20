@@ -16,7 +16,7 @@ const faqs = [
       {
         question: "Como funciona o pagamento?",
         answer:
-          "PIX dá 5% de desconto. Cartão parcela em até 6x sem juros. E se precisar de uma condição diferente, é só me chamar que a gente vê.",
+          "É bem simples: R$ 7.000 de entrada pra começar o projeto, e o restante em parcelas de R$ 1.000 por mês. Pode ser no PIX, cartão ou boleto. Se precisar ajustar alguma coisa, é só me chamar que a gente vê.",
       },
       {
         question: "Tem alguma mensalidade depois?",
